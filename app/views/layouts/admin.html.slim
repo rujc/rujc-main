@@ -35,6 +35,9 @@ html lang="en"
               li= link_to "Link 1", "/path1"
               li= link_to "Link 2", "/path2"
               li= link_to "Link 3", "/path3"
+            ul.nav.navbar-nav.navbar-right
+              li
+                = link_to I18n.t('sign_out'), destroy_admin_user_session_path, method: :delete
 
     .container-fluid
 
