@@ -2,7 +2,7 @@ doctype html
 html lang="en"
   head
     meta charset="utf-8"
-    title= content_for?(:title) ? yield(:title) : 'RJC 2014'
+    title= content_for?(:title) ? yield(:title) : I18n.t('title')
 
     = csrf_meta_tags
 

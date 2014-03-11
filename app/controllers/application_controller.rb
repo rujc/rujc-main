@@ -5,8 +5,14 @@ class ApplicationController < ActionController::Base
 
   layout :layout_by_resource
 
+  before_action :set_locale
+
   def after_sign_out_path_for(admin_user)
     admin_user_root_path
+  end
+
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
   end
 
   private
