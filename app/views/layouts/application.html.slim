@@ -1,0 +1,10 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    title= content_for?(:title) ? yield(:title) : '[Admin] RJC 2014'
+
+    = csrf_meta_tags
+
+  body
+    = yield
