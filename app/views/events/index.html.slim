@@ -1,0 +1,6 @@
+h1 Events
+
+ul
+  - @events.each do |event|
+    li
+      = link_to event.title, event
