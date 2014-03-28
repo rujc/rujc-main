@@ -36,6 +36,6 @@ bin/rails s
 What's inside?
 -
 
-- Admin panel on `/admin' (not done yet)
+- Admin panel on `/admin` (not done yet)
 - 'Static' pages like root page, `/about`, `/creators` and `/contacts`
 - Events `/events` with index and show pages
