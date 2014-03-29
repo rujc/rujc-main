@@ -1,0 +1,51 @@
+.welcome-container {
+  height: 100%;
+  position: relative;
+  background: #5a3c33 image-url('cover-bg.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.welcome {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 11% 1em 0;
+  color: $welcome-text-color;
+  text-align: center;
+}
+
+.welcome-logo {
+  width: 126px;
+  height: 41px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-indent: -9999px;
+  background: image-url('logo.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.welcome-brand {
+  position: relative;
+  padding: 5px 0 18px;
+  font: normal bold 42px/1.25 $sans-font;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -13px;
+    background: $welcome-text-color;
+  }
+}
+
+.welcome-description {
+  max-width: 390px;
+  margin: 0 auto;
+  padding: 13px 0;
+  letter-spacing: 1px;
+}
