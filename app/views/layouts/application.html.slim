@@ -13,4 +13,20 @@ html lang="en"
     link href="http://fonts.googleapis.com/css?family=Roboto:400,700,700italic&subset=latin,cyrillic" rel="stylesheet"
 
   body
+    nav.global_nav
+      a.global_nav-logo href="/" RJC
+
+      ul.global_nav-links
+        li.global_nav-link.is-active
+          a href="/" Главная
+        li.global_nav-link
+          a href="/about" О мероприятии
+        li.global_nav-link
+          a href="/about" Программа
+        li.global_nav-link
+          a href="/about" Блог
+        li.global_nav-link
+          a href="/contacts" Контакты
+        li.global_nav-link.global_nav-register_link
+          a href="/about" Регистрация
     = yield
