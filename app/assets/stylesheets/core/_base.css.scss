@@ -5,6 +5,8 @@ body {
 }
 
 a {
+  text-decoration: none;
+
   &:link { color: $link-color }
   &:visited { color: $link-visited-color }
 
