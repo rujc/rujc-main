@@ -1,0 +1,23 @@
+.beautiful_cover {
+  padding-top: 142px;
+  min-height: 273px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $sans-font;
+  font-weight: bold;
+  font-style: normal;
+  background: image-url('one-more-beautiful-cover-bg.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.beautiful_cover-title {
+  color: $beatiful-text-color;
+  font-size: 86px;
+  line-height: 96px;
+  font-weight: bold;
+}
+
+.beautiful_cover-subtitle {
+  font-size: 16px;
+  font-weight: bold;
+}
