@@ -24,7 +24,7 @@ html, body {
 .global_nav-links {
   float: right;
   position: relative;
-  padding: 10px 150px 12px 0;
+  padding: 10px 165px 12px 0;
   font: normal bold 93%/1 $sans-font;
   text-transform: uppercase;
 
@@ -61,27 +61,26 @@ html, body {
 
   &:first-child:after,
   &.global_nav-register_link:after {
-    display: none
+    display: none;
   }
 }
 
-.global_nav-register_link{
+.global_nav-register_link {
   display: block;
-  width: 150px;
+  width: 165px;
   height: 70px;
   position: absolute;
-  top: -20px; right: 0;
+  top: -20px;
+  right: 0;
   padding: 0;
-  text-align: center;
-  background: image-url('nav-register-link-bg.png') 0 -70px no-repeat;
 
   a {
     display: block;
     height: 40px;
-    padding-top: 30px;
-  }
+    padding: 30px 25px 0 0;
+    background: image-url('nav-register-link-bg.png') 0 -70px no-repeat;
+    text-align: right;
 
-  &:hover {
-    background-position: 0 0;
+    &:hover { background-position: 0 0 }
   }
 }
