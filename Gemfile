@@ -12,6 +12,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'normalize-rails'
 gem 'autoprefixer-rails'
+gem 'rails-sass-images'
 
 # Twitter Bootstrap
 gem 'therubyracer', platforms: :ruby

@@ -1,0 +1,21 @@
+%btn {
+  display: inline-block;
+  padding: 10px 24px 11px;
+  background-color: $btn-bg-color;
+
+  font: normal bold 12px/1 $sans-font;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &, &:link, &:visited {
+    color: $btn-color;
+  }
+
+  &:hover, &:active {
+    background-color: $btn-active-bg-color;
+  }
+}
+
+.btn {
+  @extend %btn;
+}

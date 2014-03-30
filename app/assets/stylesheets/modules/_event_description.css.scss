@@ -1,0 +1,72 @@
+.event_description {
+  margin-left: 230px;
+  margin-right: 266px;
+}
+
+.event-title {
+  font: normal bold 36px/1.2 $sans-font;
+  text-transform: uppercase;
+  color: $bright;
+}
+
+.event-location {
+  @include hidpi-inline('location-icon.png');
+  padding-left: 11px;
+  background-position: left center;
+
+  &:link, &:visited {
+    color: $text-color;
+  }
+
+  &:hover {
+    @include hidpi-inline('location-icon-active.png');
+    background-position: left center;
+    color: $bright;
+  }
+}
+
+.event_description-contents {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 21px;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    background: $bright;
+  }
+}
+
+.event_participation {
+  margin: 20px 0 0;
+  .btn { margin-right: 20px }
+}
+
+.event-participants {
+  @extend %btn;
+
+  position: relative;
+  margin-left: -12px;
+  padding-left: 9px;
+  padding-right: 9px;
+
+  background-color: $btn-active-bg-color;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    margin-top: -4px;
+    border-style: solid;
+    border-width: 4px 4px 4px 0;
+    border-color: transparent $btn-active-bg-color transparent transparent;
+  }
+}
