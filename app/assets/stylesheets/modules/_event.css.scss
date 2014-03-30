@@ -6,7 +6,7 @@
 .event_meta {
   float: left;
   width: 206px;
-  border-right: 2px solid $btn-color;
+  border-right: 2px solid $btn-bg-color;
 }
 
 .event_description {
@@ -17,7 +17,7 @@
 .event-title {
   font: normal bold 36px/1.2 $sans-font;
   text-transform: uppercase;
-  color: $link-active-color;
+  color: $bright;
 }
 
 .event-location {
@@ -30,12 +30,11 @@
   }
 
   &:hover {
-    color: $link-active-color;
+    color: $bright;
     @include hidpi-inline('location-icon-active.png');
     background-position: left center;
   }
 }
-
 
 .event_description-contents {
   position: relative;
@@ -49,6 +48,36 @@
     height: 3px;
     position: absolute;
     top: 0;
-    background: $link-active-color;
+    background: $bright;
+  }
+}
+
+.event_participation {
+  margin: 20px 0 0;
+  .btn { margin-right: 20px }
+}
+
+.event-participants {
+  @extend %btn;
+
+  position: relative;
+  margin-left: -10px;
+  padding-left: 9px;
+  padding-right: 9px;
+
+  background-color: $btn-active-bg-color;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    margin-top: -4px;
+    border-style: solid;
+    border-width: 4px 4px 4px 0;
+    border-color: transparent $btn-active-bg-color transparent transparent;
   }
 }

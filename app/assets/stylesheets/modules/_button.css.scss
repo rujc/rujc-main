@@ -1,0 +1,20 @@
+%btn {
+  display: inline-block;
+  padding: 12px 13px 11px;
+  background-color: $btn-bg-color;
+
+  font: normal bold 12px/1 $sans-font;
+  text-transform: uppercase;
+
+  &, &:link, &:visited {
+    color: $btn-color;
+  }
+
+  &:hover, &:active {
+    background-color: $btn-active-bg-color;
+  }
+}
+
+.btn {
+  @extend %btn;
+}
