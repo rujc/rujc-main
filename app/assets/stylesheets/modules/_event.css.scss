@@ -1,0 +1,15 @@
+.event {
+  @extend %clearfix;
+  padding: 70px 0 0;
+}
+
+.event_meta {
+  float: left;
+  width: 206px;
+  border-right: 2px solid $btn-color;
+}
+
+.event_description {
+  margin-left: 228px;
+  margin-right: 266px;
+}

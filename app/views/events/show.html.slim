@@ -1,3 +1,14 @@
-h1 = @event.title
+.event
+  .event_meta
+    .event_speaker
+      .event_speaker-image
+      .event_speaker-name
+      .event_speaker-title
+      .event_speaker-social
+    .event_date
 
-p = @event.description
+  .event_description
+    h2.event-title= @event.title
+    .event-location г. Москва ул. Пушкина 32
+    .event_description-contents= @event.description
+    .event_participation
