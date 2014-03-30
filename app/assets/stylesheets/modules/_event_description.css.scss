@@ -10,8 +10,8 @@
 }
 
 .event-location {
-  padding-left: 11px;
   @include hidpi-inline('location-icon.png');
+  padding-left: 11px;
   background-position: left center;
 
   &:link, &:visited {
@@ -19,9 +19,9 @@
   }
 
   &:hover {
-    color: $bright;
     @include hidpi-inline('location-icon-active.png');
     background-position: left center;
+    color: $bright;
   }
 }
 
