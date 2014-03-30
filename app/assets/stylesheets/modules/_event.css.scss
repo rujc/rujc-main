@@ -13,3 +13,42 @@
   margin-left: 228px;
   margin-right: 266px;
 }
+
+.event-title {
+  font: normal bold 36px/1.2 $sans-font;
+  text-transform: uppercase;
+  color: $link-active-color;
+}
+
+.event-location {
+  padding-left: 11px;
+  @include hidpi-inline('location-icon.png');
+  background-position: left center;
+
+  &:link, &:visited {
+    color: $text-color;
+  }
+
+  &:hover {
+    color: $link-active-color;
+    @include hidpi-inline('location-icon-active.png');
+    background-position: left center;
+  }
+}
+
+
+.event_description-contents {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 21px;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    background: $link-active-color;
+  }
+}
