@@ -1,10 +1,11 @@
 %btn {
   display: inline-block;
-  padding: 12px 13px 11px;
+  padding: 10px 24px 11px;
   background-color: $btn-bg-color;
 
   font: normal bold 12px/1 $sans-font;
   text-transform: uppercase;
+  letter-spacing: 1px;
 
   &, &:link, &:visited {
     color: $btn-color;
