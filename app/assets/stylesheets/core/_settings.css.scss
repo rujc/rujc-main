@@ -8,8 +8,6 @@ $link-color: #e62044;
 $link-visited-color: #e62044;
 $link-active-color: #e62044;
 
-$bright: $link-active-color;
-
 $welcome-text-color: #fbfbfb;
 $beatiful-text-color: #e62044;
 $nav-bg-color: #333135;
@@ -18,3 +16,6 @@ $nav-text-color: #fff;
 $btn-bg-color: $link-color;
 $btn-active-bg-color: #323034;
 $btn-color: #fff;
+
+$bright: $link-active-color;
+$dark: $btn-active-bg-color;
