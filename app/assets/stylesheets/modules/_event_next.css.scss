@@ -1,0 +1,34 @@
+.event_next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 265px;
+  height: 100%;
+}
+
+.event_next_link {
+  display: block;
+  height: 100%;
+  position: relative;
+  text-align: center;
+
+  &:link, &:visited {
+    color: $dark;
+  }
+
+  &:hover {
+    color: $bright;
+  }
+}
+
+.event_next_date {
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  margin-left: -73px;
+}
+
+.event_next_date-wrap {
+  width: 146px;
+}

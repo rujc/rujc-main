@@ -7,7 +7,7 @@ nav.global_nav
     li.global_nav-link
       a href="/about" О мероприятии
     li.global_nav-link
-      a href="/events/1" Программа
+      = link_to 'Программа', Event.ordered.first
     li.global_nav-link
       a href="/about" Блог
     li.global_nav-link
