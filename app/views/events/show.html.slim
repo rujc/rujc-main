@@ -1,15 +1,14 @@
 .event
   .event_meta
-    .event_meta-wrap
-      .event_speaker
-        .event_speaker-image
-        .event_speaker-name Дима Захаров
-        .event_speaker-title главный докладчик
-        .event_speaker-social
-          a.event_speaker-social_link.event_speaker-social_fb href="#" Facebook
-          a.event_speaker-social_link.event_speaker-social_vk href="#" Vkontakte
+    .event_speaker
+      .event_speaker-image
+      .event_speaker-name Дима Захаров
+      .event_speaker-title главный докладчик
+      .event_speaker-social
+        a.event_speaker-social_link.event_speaker-social_fb href="#" Facebook
+        a.event_speaker-social_link.event_speaker-social_vk href="#" Vkontakte
 
-      .event_date= event_nice_date(@event)
+    .event_date= event_nice_date(@event)
 
   .event_description
     h2.event-title= @event.title
