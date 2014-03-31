@@ -12,23 +12,31 @@
   height: 100%;
   position: relative;
   text-align: center;
+  background: image-url('event-next-bg.png') right bottom no-repeat;
 
-  &:link, &:visited {
-    color: $dark;
+  &:link, &:visited, &:hover {
+    color: $light;
   }
 
   &:hover {
-    color: $bright;
+    background-image: image-url('event-next-active-bg.png');
+    .event_next_date-month i {
+      background: $bright;
+    }
   }
 }
 
 .event_next_date {
   position: absolute;
   bottom: 130px;
-  left: 50%;
-  margin-left: -73px;
+  right: 30px;
 }
 
 .event_next_date-wrap {
   width: 146px;
+}
+
+.event_next_date-month i {
+  color: $light;
+  background: $dark;
 }
