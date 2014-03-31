@@ -1,10 +1,9 @@
-.event_date, .event_next_date  {
+.event_date {
+  margin: 118px 0 130px;
   font: normal bold 15px/1 $sans-font;
   text-transform: uppercase;
   text-align: left;
 }
-
-.event_date { margin: 118px 0 130px }
 
 .event_date-time {
   margin-top: -2px;
@@ -12,17 +11,17 @@
   color: $bright;
 }
 
-.event_date-date, .event_next_date-date {
+.event_date-date {
   font-size: 132px;
 }
 
-.event_date-wrap, .event_next_date-wrap {
+.event_date-wrap {
   position: relative;
   overflow: hidden;
   margin-top: -21px;
 }
 
-.event_date-month, .event_next_date-month {
+.event_date-month {
   position: absolute;
   bottom: 0;
   right: 0;
