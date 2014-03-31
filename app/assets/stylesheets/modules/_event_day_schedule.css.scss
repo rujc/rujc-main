@@ -1,0 +1,12 @@
+.event_day_schedule {
+  &:before {
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: 52px;
+    right: 0;
+    left: 0;
+    background: $dark;
+  }
+}
