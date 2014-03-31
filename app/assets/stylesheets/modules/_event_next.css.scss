@@ -1,0 +1,53 @@
+.event_next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 265px;
+  height: 100%;
+}
+
+.event_next_link {
+  display: block;
+  height: 100%;
+  position: relative;
+  background: inline('event-next-bg.png') right bottom no-repeat;
+
+  &:link, &:visited, &:hover {
+    color: $light;
+  }
+
+  &:hover {
+    background-image: inline('event-next-active-bg.png');
+  }
+}
+
+.event_next_date {
+  @extend .event_date;
+  position: absolute;
+  bottom: 130px;
+  right: 30px;
+  margin: 0;
+}
+
+.event_next_date-wrap {
+  @extend .event_date-wrap;
+  width: 146px;
+}
+
+.event_next_date-date {
+  @extend .event_date-date;
+}
+
+.event_next_date-month {
+  @extend .event_date-month;
+
+  i {
+    color: $light;
+    background: $dark;
+
+    .event_next_link:hover & {
+      background: $bright;
+    }
+  }
+}

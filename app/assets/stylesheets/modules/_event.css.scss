@@ -1,7 +1,11 @@
 @import 'event_meta';
+@import 'event_date';
 @import 'event_description';
+@import 'event_next';
+@import 'event_day_schedule';
 
 .event {
   @extend %clearfix;
-  padding: 70px 0 0;
+  padding: 70px 0 60px;
+  position: relative;
 }

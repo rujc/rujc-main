@@ -1,0 +1,43 @@
+.event_date {
+  margin: 118px 0 0;
+  font: normal bold 15px/1 $sans-font;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.event_date-time {
+  margin-top: -2px;
+  font-size: 42px;
+  color: $bright;
+}
+
+.event_date-date {
+  font-size: 132px;
+}
+
+.event_date-wrap {
+  position: relative;
+  overflow: hidden;
+  margin-top: -21px;
+}
+
+.event_date-month {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  i {
+    padding: 0 4px;
+    background: $bg-color;
+    color: $bright;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 1px;
+  }
+
+  em {
+    font-size: 132px;
+    line-height: 132px;
+  }
+}

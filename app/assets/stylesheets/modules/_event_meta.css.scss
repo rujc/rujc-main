@@ -1,9 +1,9 @@
 .event_meta {
   float: left;
   width: 146px;
-  padding: 4px 30px 0;
-  border-right: 2px solid $dark;
+  padding: 4px 30px 70px;
   text-align: center;
+  border-right: 2px solid $dark;
 }
 
 .event_speaker-image {
@@ -59,50 +59,5 @@
     background-position: -14px 0;
 
     &:hover { background-position: -14px -14px }
-  }
-}
-
-.event_date {
-  margin: 118px 0 75px;
-  font: normal bold 15px/1 $sans-font;
-  text-transform: uppercase;
-  text-align: left;
-}
-
-.event_date-time {
-  margin-top: -2px;
-  font-size: 42px;
-  color: $bright;
-}
-
-.event_date-date {
-  font-size: 132px;
-  vertical-align: bottom;
-}
-
-.event_date-wrap {
-  position: relative;
-  overflow: hidden;
-  margin-top: -21px;
-}
-
-.event_date-month {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-
-  i {
-    padding: 0 4px;
-    background: $bg-color;
-    color: $bright;
-    font-size: 20px;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: 1px;
-  }
-
-  em {
-    font-size: 132px;
-    line-height: 132px;
   }
 }

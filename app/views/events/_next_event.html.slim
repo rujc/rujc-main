@@ -1,0 +1,7 @@
+= link_to event, class: 'event_next_link' do
+  .event_next_date
+    .event_next_date-wrap
+      .event_next_date-date= event.starts_at.strftime('%e')
+      .event_next_date-month
+        i= event.starts_at.strftime('%B')
+        em
