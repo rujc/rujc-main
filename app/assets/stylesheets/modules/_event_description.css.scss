@@ -31,11 +31,9 @@
   padding: 20px 0 0;
 
   &:before {
-    content: '';
-    display: block;
+    @extend %absolute-pseudo;
     width: 21px;
     height: 3px;
-    position: absolute;
     top: 0;
     background: $bright;
   }
@@ -57,11 +55,9 @@
   background-color: $btn-active-bg-color;
 
   &:before {
-    content: '';
-    display: block;
+    @extend %absolute-pseudo;
     width: 0;
     height: 0;
-    position: absolute;
     top: 50%;
     left: -4px;
     margin-top: -4px;

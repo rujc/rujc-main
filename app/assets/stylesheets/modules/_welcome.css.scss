@@ -31,11 +31,9 @@
   letter-spacing: 3px;
 
   &:after {
-    content: '';
-    display: block;
+    @extend %absolute-pseudo;
     width: 26px;
     height: 3px;
-    position: absolute;
     bottom: 0;
     left: 50%;
     margin-left: -13px;
