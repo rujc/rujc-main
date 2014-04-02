@@ -1,5 +1,5 @@
 .welcome-container {
-  height: 100%;
+  min-height: 100%;
   position: relative;
   background: #5a3c33 image-url('cover-bg.jpg') center center no-repeat;
   background-size: cover;
@@ -78,5 +78,43 @@
     i {
       border-color: $link-active-color;
     }
+  }
+}
+
+.welcome-countdown {
+  padding: 150px 0 5px;
+  text-align: center;
+  font: normal bold 15px/1 $sans-font;
+  text-transform: uppercase;
+  color: $light;
+  letter-spacing: 1px;
+
+  .countdown-section {
+    display: inline-block;
+    margin: 0 12px;
+    font-size: 11px;
+    font-weight: normal;
+
+    &:first-child .countdown-amount:before { display: none }
+  }
+
+  .countdown-amount {
+    position: relative;
+    font-size: 55px;
+
+    &:before {
+      @extend %absolute-pseudo;
+      @include hidpi-inline('colon.png');
+      left: -15px;
+      top: 50%;
+      margin-top: -10px;
+    }
+  }
+
+  .countdown-period {
+    display: block;
+    font-size: 11px;
+    text-align: center;
+    text-transform: lowercase;
   }
 }
