@@ -12,3 +12,9 @@
 
   &:after { clear: both }
 }
+
+%absolute-pseudo {
+  content: '';
+  display: block;
+  position: absolute;
+}

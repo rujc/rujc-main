@@ -44,9 +44,7 @@
   position: relative;
 
   &:after {
-    content: '';
-    display: block;
-    position: absolute;
+    @extend %absolute-pseudo;
     left: -1px;
     top: 0;
     bottom: 0;

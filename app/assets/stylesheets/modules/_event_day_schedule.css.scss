@@ -1,12 +1,79 @@
 .event_day_schedule {
   &:before {
-    content: '';
-    display: block;
+    @extend %absolute-pseudo;
     height: 2px;
-    position: absolute;
     bottom: 52px;
     right: 0;
     left: 0;
     background: $dark;
   }
+
+  &:after {
+    @extend %absolute-pseudo;
+    @include hidpi-inline('dot.png');
+    bottom: 49px;
+    left: 203px;
+  }
+}
+
+.event_day_schedule_events {
+  position: absolute;
+  bottom: 64px;
+  right: 270px;
+  left: 230px;
+  text-align: right;
+}
+
+.event_day_schedule_event {
+  display: inline-block;
+  position: relative;
+  min-width: 180px;
+  max-width: 280px;
+  margin: 0 0 0 10px;
+
+  &:before {
+    @extend %absolute-pseudo;
+    @include hidpi-inline('dot.png');
+    bottom: -15px;
+    left: 10.5px;
+  }
+}
+
+.event_day_schedule_event-link {
+  display: block;
+  padding: 10px;
+  position: relative;
+  text-align: left;
+  font: normal bold 12px/1 $sans-font;
+  text-transform: uppercase;
+
+  &:link, &:visited {
+    color: $light;
+    background: $bright;
+  }
+
+  &:hover, &:active {
+    color: $light;
+    background: $dark;
+
+    &:before {
+      border-color: $dark transparent transparent transparent;
+    }
+  }
+
+  &:before {
+    @extend %absolute-pseudo;
+    bottom: -4px;
+    left: 10px;
+    margin-top: -4px;
+    border-style: solid;
+    border-width: 4px 5px 0 5px;
+    border-color: $bright transparent transparent transparent;
+  }
+}
+
+.event_day_schedule_event-title,
+.event_day_schedule_event-time {
+  display: block;
+  max-width: 120px;
 }

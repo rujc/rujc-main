@@ -8,7 +8,7 @@
         a.event_speaker-social_link.event_speaker-social_fb href="#" Facebook
         a.event_speaker-social_link.event_speaker-social_vk href="#" Vkontakte
 
-    .event_date= event_nice_date(@event)
+    .event_date= render 'events/event_date', date: @event.starts_at
 
   .event_description
     h2.event-title= @event.title
@@ -19,6 +19,8 @@
       a.btn.event-participate_link href="#" Я пойду
       span.event-participants 163
 
-  .event_day_schedule
+  .event_day_schedule= render 'events/day_schedule', events: @event.the_same_day_in_schedule
 
-  .event_next= event_next_in_schedule(@event)
+  .event_next
+    - if next_event = @event.next_day_in_schedule
+      = render 'events/next_event', event: next_event
