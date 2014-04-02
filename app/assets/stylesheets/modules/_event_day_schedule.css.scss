@@ -9,6 +9,15 @@
     left: 0;
     background: $dark;
   }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 49px;
+    left: 203px;
+    @include hidpi-inline('dot.png');
+  }
 }
 
 .event_day_schedule_events {
@@ -21,9 +30,19 @@
 
 .event_day_schedule_event {
   display: inline-block;
+  position: relative;
   min-width: 180px;
   max-width: 280px;
   text-align: left;
+
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 10.5px;
+    @include hidpi-inline('dot.png');
+  }
 }
 
 .event_day_schedule_event-link {
