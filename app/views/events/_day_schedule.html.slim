@@ -1,0 +1,6 @@
+ul.event_day_schedule_events
+  - events.each do |event|
+    li.event_day_schedule_event
+      = link_to event, class: 'event_day_schedule_event-link' do
+        span.event_day_schedule_event-title= event.title
+        span.event_day_schedule_event-time= event.starts_at.strftime('%k:%M')

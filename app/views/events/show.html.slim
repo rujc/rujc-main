@@ -19,7 +19,7 @@
       a.btn.event-participate_link href="#" Я пойду
       span.event-participants 163
 
-  .event_day_schedule
+  .event_day_schedule= render 'events/day_schedule', events: @event.the_same_day_in_schedule
 
   .event_next
     - if next_event = @event.next_day_in_schedule
