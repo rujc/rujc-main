@@ -7,4 +7,4 @@
 $ ->
   $.countdown.setDefaults($.countdown.regionalOptions['ru'])
 
-  $('.welcome-countdown').countdown(until: new Date(2014, 5-1, 22, 13, 0))
+  $('.welcome-countdown_timer').countdown(until: new Date(2014, 5-1, 22, 13, 0))
