@@ -29,6 +29,7 @@
   position: relative;
   min-width: 180px;
   max-width: 280px;
+  margin: 0 0 0 10px;
 
   &:before {
     @extend %absolute-pseudo;
