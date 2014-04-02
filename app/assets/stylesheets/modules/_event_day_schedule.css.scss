@@ -29,7 +29,6 @@
   position: relative;
   min-width: 180px;
   max-width: 280px;
-  text-align: left;
 
   &:before {
     @extend %absolute-pseudo;
@@ -63,8 +62,6 @@
 
   &:before {
     @extend %absolute-pseudo;
-    width: 0;
-    height: 0;
     bottom: -4px;
     left: 10px;
     margin-top: -4px;

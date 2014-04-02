@@ -56,8 +56,6 @@
 
   &:before {
     @extend %absolute-pseudo;
-    width: 0;
-    height: 0;
     top: 50%;
     left: -4px;
     margin-top: -4px;
