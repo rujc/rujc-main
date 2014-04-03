@@ -30,3 +30,7 @@ gem 'capistrano-rails', '~> 1.1'
 group :development, :test do
   gem 'rspec-rails'
 end
+
+group :staging, :production do
+  gem 'unicorn'
+end
