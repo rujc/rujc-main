@@ -6,8 +6,8 @@ This is a repository for RJC 2014 website.
 Dependencies
 -
 
-- Ruby 2.1.0-p0
-  - `rbenv install 2.1.0-p0`
+- Ruby 2.0.0-p451
+  - `rbenv install 2.0.0-p451`
 - Rails 4.0.2
 
 Quick Start
