@@ -21,6 +21,8 @@ gem 'twitter-bootstrap-rails'
 
 gem 'devise'
 
+gem 'capistrano', '~> 3.1.0'
+
 group :development, :test do
   gem 'rspec-rails'
 end
