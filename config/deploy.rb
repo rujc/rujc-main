@@ -2,6 +2,7 @@
 lock '3.1.0'
 
 set :application, 'rjc'
+set :deploy_to, '/var/www/rjc'
 set :repo_url, 'git@github.com:juggler/rjc.git'
 
 set :branch, 'deploy'
@@ -12,7 +13,6 @@ set :pty, true
 set :rbenv_custom_path, '/opt/rbenv'
 set :rbenv_ruby, '2.0.0-p451'
 
-# Default value for :linked_files is []
 set :linked_files, %w{config/database.yml config/unicorn.rb}
 
 # Default value for linked_dirs is []
