@@ -9,6 +9,7 @@ set :branch, 'deploy'
 # Default value for :pty is false
 set :pty, true
 
+set :rbenv_custom_path, '/opt/rbenv'
 set :rbenv_ruby, '2.0.0-p451'
 
 # Default value for :linked_files is []
