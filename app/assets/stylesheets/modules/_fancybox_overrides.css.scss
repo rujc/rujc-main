@@ -1,0 +1,18 @@
+.fancybox--rjc {
+  .fancybox-skin {
+    box-shadow: none;
+    background: transparent;
+    border-radius: 0;
+    color: $light;
+  }
+
+  .fancybox-close {
+    @include hidpi-inline('modal-close.png');
+    top: 0;
+    right: 0;
+
+    &:hover {
+      @include hidpi-inline('modal-close-hover.png');
+    }
+  }
+}
