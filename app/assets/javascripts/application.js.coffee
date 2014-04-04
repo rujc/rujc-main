@@ -3,6 +3,7 @@
 //= require jquery.plugin
 //= require jquery.countdown
 //= require jquery.countdown-ru
+//= require fancybox
 
 $ ->
   $.countdown.setDefaults($.countdown.regionalOptions['ru'])
