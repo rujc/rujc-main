@@ -13,6 +13,7 @@ gem 'jquery-rails'
 gem 'normalize-rails'
 gem 'autoprefixer-rails'
 gem 'rails-sass-images'
+gem 'fancybox2-rails', '~> 0.2.8'
 
 # Twitter Bootstrap
 gem 'therubyracer', platforms: :ruby
