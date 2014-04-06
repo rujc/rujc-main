@@ -12,6 +12,8 @@ $ ->
     arrows: false
     helpers: { overlay: { css: { background: 'rgba(230, 32, 68, .9)' } } }
   })
+
   $.countdown.setDefaults($.countdown.regionalOptions['ru'])
 
   $('.welcome-countdown_timer').countdown(until: new Date(2014, 5-1, 22, 13, 0))
+  $('.modal-link').fancybox()
