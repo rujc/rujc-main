@@ -1,4 +1,6 @@
 %btn {
+  -moz-appearance: none!important;
+  -webkit-appearance: none!important;
   display: inline-block;
   padding: 10px 24px 11px;
   background-color: $btn-bg-color;
@@ -22,6 +24,7 @@
 
 .btn--submit {
   @extend %btn;
+  padding: 12px 13px 12px;
   background: $dark;
 
   &:hover {

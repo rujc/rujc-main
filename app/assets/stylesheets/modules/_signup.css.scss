@@ -1,0 +1,41 @@
+%signup-fieldset {
+  margin: 0 0 22px;
+}
+
+.signup-primary {
+  @extend %signup-fieldset;
+
+  input {
+    width: 180px;
+    margin: 0 0 0 10px;
+
+    &:first-child { margin: 0 }
+  }
+}
+
+.signup-address {
+  @extend %signup-fieldset;
+
+  input {
+    width: 396px;
+  }
+}
+
+.signup-role {
+  @extend %signup-fieldset;
+  @extend %clearfix;
+
+  label {
+    float: left;
+    padding: 12px 0 0 13px;
+  }
+
+  select {
+    width: 343px;
+    float: right;
+  }
+}
+
+.signup-submit {
+  width: 396px;
+}
