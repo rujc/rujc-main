@@ -19,3 +19,12 @@
 .btn {
   @extend %btn;
 }
+
+.btn--submit {
+  @extend %btn;
+  background: $dark;
+
+  &:hover {
+    color: $bright;
+  }
+}
