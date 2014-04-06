@@ -8,8 +8,8 @@
 
   .fancybox-close {
     @include hidpi-inline('modal-close.png');
-    top: 0;
-    right: 0;
+    top: 13px;
+    right: 9px;
 
     &:hover {
       @include hidpi-inline('modal-close-hover.png');
