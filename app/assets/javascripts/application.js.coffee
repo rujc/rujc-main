@@ -10,7 +10,11 @@ $ ->
     wrapCSS: 'fancybox--rjc'
     padding: 0
     arrows: false
-    helpers: { overlay: { css: { background: 'rgba(230, 32, 68, .9)' } } }
+    helpers:
+      overlay:
+        closeClick: false
+        css:
+          background: 'rgba(230, 32, 68, .9)'
   })
 
   $.countdown.setDefaults($.countdown.regionalOptions['ru'])
