@@ -1,0 +1,20 @@
+.modal {
+  min-width: 420px;
+}
+
+.modal-title {
+  position: relative;
+  margin: 0 0 25px;
+  padding: 0 0 21px;
+  font: normal bold 36px/1 $sans-font;
+  text-transform: uppercase;
+
+  &:before {
+    @extend %absolute-pseudo;
+    width: 26px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: $light;
+  }
+}
