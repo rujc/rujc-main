@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.2'
 
-gem 'sqlite3'
+gem 'pg'
 
 # Assets
 gem 'slim-rails'
@@ -22,6 +22,16 @@ gem 'twitter-bootstrap-rails'
 
 gem 'devise'
 
+# Capistrano
+gem 'capistrano', '~> 3.1.0'
+gem 'capistrano-rbenv', '~> 2.0'
+gem 'capistrano-bundler', '~> 1.1.2'
+gem 'capistrano-rails', '~> 1.1'
+
 group :development, :test do
   gem 'rspec-rails'
+end
+
+group :staging, :production do
+  gem 'unicorn'
 end
