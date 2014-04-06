@@ -7,7 +7,7 @@ Dependencies
 -
 
 - Ruby 2.1.1
-  - `rbenv install 2.1.1
+  - `rbenv install 2.1.1`
 - Rails 4.0.2
 
 Quick Start
