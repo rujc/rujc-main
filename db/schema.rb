@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140406174818) do
+ActiveRecord::Schema.define(version: 20140406175243) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -54,6 +54,13 @@ ActiveRecord::Schema.define(version: 20140406174818) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "conditions",  default: "free", null: false
+  end
+
+  create_table "places", force: true do |t|
+    t.string   "title",            default: "", null: false
+    t.string   "google_maps_link", default: "", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
