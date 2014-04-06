@@ -1,7 +1,3 @@
-unless Rails.env.production?
-  AdminUser.create!(email: 'admin@rjc2014.com', password: '12345678')
-end
-
 event_start = 14.days.from_now
 dummy_description = %Q{
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
