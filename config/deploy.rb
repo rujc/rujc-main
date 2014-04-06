@@ -11,7 +11,7 @@ set :ssh_options, {
 }
 
 set :rbenv_custom_path, '/opt/rbenv'
-set :rbenv_ruby, '2.0.0-p451'
+set :rbenv_ruby, '2.1.1'
 
 set :linked_files, %w{config/database.yml config/unicorn.rb}
 
