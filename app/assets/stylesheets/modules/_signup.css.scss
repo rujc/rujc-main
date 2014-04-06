@@ -35,9 +35,14 @@
   }
 
   select {
-    width: 343px;
+    width: 356px;
     float: right;
   }
+}
+
+// webkit has its own opinion on which width `select` should have
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .signup-role select { width: 343px }
 }
 
 .signup-submit {
