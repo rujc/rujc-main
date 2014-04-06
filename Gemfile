@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 gem 'rails', '4.0.2'
 
@@ -14,6 +15,7 @@ gem 'normalize-rails'
 gem 'autoprefixer-rails'
 gem 'rails-sass-images'
 gem 'fancybox2-rails', '~> 0.2.8'
+gem 'rails-assets-jquery-placeholder'
 
 # Twitter Bootstrap
 gem 'therubyracer', platforms: :ruby

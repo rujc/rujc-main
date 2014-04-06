@@ -1,8 +1,16 @@
-::placeholder {
+@mixin placeholder {
   color: $input-placeholder-color;
   text-transform: uppercase;
   font-size: 12px;
   line-height: normal;
+}
+
+::placeholder {
+  @include placeholder;
+}
+
+input.placeholder {
+  @include placeholder;
 }
 
 input {
