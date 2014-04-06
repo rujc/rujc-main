@@ -2,9 +2,8 @@
 lock '3.1.0'
 
 set :application, 'rjc'
-set :deploy_to, '/var/www/rjc'
 set :repo_url, 'git@github.com:juggler/rjc.git'
-set :branch, 'deploy'
+set :branch, 'master'
 
 set :ssh_options, {
   forward_agent: true
