@@ -17,12 +17,8 @@ gem 'rails-sass-images'
 gem 'fancybox2-rails', '~> 0.2.8'
 gem 'rails-assets-jquery-placeholder'
 
-# Twitter Bootstrap
-gem 'therubyracer', platforms: :ruby
-gem 'less-rails'
-gem 'twitter-bootstrap-rails'
-
-gem 'devise'
+# Admin cabinet
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 # Capistrano
 gem 'capistrano', '~> 3.1.0'

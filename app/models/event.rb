@@ -1,4 +1,6 @@
 class Event < ActiveRecord::Base
+  belongs_to :place
+
   scope :ordered, -> { order('events.starts_at asc') }
   scope :since, ->(date) { ordered.where('events.starts_at > ?', date) }
   scope :until, ->(date) { ordered.where('events.starts_at < ?', date) }

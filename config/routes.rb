@@ -1,9 +1,6 @@
 Rjc::Application.routes.draw do
-  devise_for :admin_users
-
-  namespace :admin do
-    get '/', to: 'dashboard#index', as: 'user_root'
-  end
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
 
   root to: 'static#main'
 
