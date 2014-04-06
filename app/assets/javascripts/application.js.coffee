@@ -4,6 +4,7 @@
 //= require jquery.countdown
 //= require jquery.countdown-ru
 //= require fancybox
+//= require jquery-placeholder
 
 $ ->
   $.extend($.fancybox.defaults, {
@@ -21,3 +22,4 @@ $ ->
 
   $('.welcome-countdown_timer').countdown(until: new Date(2014, 5-1, 22, 13, 0))
   $('.modal-link').fancybox()
+  $('input, textarea').placeholder()
