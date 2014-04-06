@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   def index
-    @events = Event.all
+    redirect_to Event.ordered.first
   end
 
   def show
