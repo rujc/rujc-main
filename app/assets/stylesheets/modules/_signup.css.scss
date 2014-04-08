@@ -17,26 +17,48 @@
   }
 }
 
-.signup-address {
+.signup-volunteer {
   @extend %signup-fieldset;
+
+  label {
+    float: left;
+    padding: 12px 0 0;
+    margin: 0 0 22px;
+  }
 
   input {
     width: 396px;
   }
 }
 
-.signup-role {
+.signup-question {
   @extend %signup-fieldset;
   @extend %clearfix;
 
   label {
     float: left;
-    padding: 12px 0 0 13px;
+    padding: 12px 0 0;
   }
 
   select {
-    width: 356px;
+    margin: 0 68px 0 0;
     float: right;
+  }
+}
+
+.signup-long-question {
+  @extend %signup-fieldset;
+  @extend %clearfix;
+
+  label {
+    float: left;
+    padding: 12px 0 0;
+    margin: 0 0 22px;
+  }
+
+  select {
+    width: 383px;
+    float: left;
   }
 }
 

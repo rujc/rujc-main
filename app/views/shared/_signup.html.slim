@@ -5,15 +5,54 @@ form.signup.modal#main_signup_form
       input type="text" name="first_name" placeholder="Имя"
       input type="text" name="last_name" placeholder="Фамилия"
 
-    fieldset.signup-address
-      input type="text" name="address" placeholder="Откуда"
+    fieldset.signup-primary
+      input type="text" name="city" placeholder="Город"
+      input type="text" name="age" placeholder="Возраст"
 
-    fieldset.signup-role
-      label Я
-      select name="role"
-        option value="spectator" Зритель
-        option value="participant" Участник
+    fieldset.signup-primary
+      input type="text" name="phone_number" placeholder="Контактный телефон"
+      input type="text" name="email" placeholder="Email"
+
+    fieldset.signup-question
+      label Планируете ли вы проводить мастер-класс?
+      select name="master_class"
+        option value="да" Да
+        option value="нет" Нет
+        option value="возможно" Возможно
+
+    fieldset.signup-question
+      label Планируете ли вы выступать на открытой сцене?
+      select name="will_perform"
+        option value="да" Да
+        option value="нет" Нет
+        option value="возможно" Возможно
+
+    fieldset.signup-checkbox-question
+      div
+        label Будете ли вы посещать мастер-классы специальных гостей конвенции?
+
+      div
+        input type="checkbox" name="mc[]" value="okotanpe"
+        label Okotanpe, контактное жонглирование
+      div
+        input type="checkbox" name="mc[]" value="yamamura"
+        label Yuri Yamamura, классическое жонглирование
+
+    fieldset.signup-long-question
+      div
+        label Какой способ предоплаты за участие в конвенции вы предпочитаете?
+
+      div
+        select name="payment_method"
+          option value="sberbank" Оплата на карточку Сбербанка
+          option value="bank" Оплата по квитанции в любом банке
+          option value="cash" Лично наличными (Москва,  Санкт-Петербург, Нижний Новгород)
+
+    fieldset.signup-volunteer
+      div
+        label Хотели бы вы быть волонтером на конвенции и получить бонусы от организаторов?
+      div
+        input type="text" name="will_volunteer" placeholder=""
 
     fieldset
       input.btn--submit.signup-submit type="submit" value="Я иду!"
-
