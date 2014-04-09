@@ -46,8 +46,16 @@
   }
 }
 
-.singup-checkbox-question {
+.signup-checkbox-question {
   @extend %signup-fieldset;
+
+  input[type="checkbox"] {
+    margin-right: 4px;
+  }
+
+  .signup-checkbox {
+    margin: 4px 0;
+  }
 }
 
 .signup-long-question {
