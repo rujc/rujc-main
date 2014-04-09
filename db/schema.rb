@@ -61,17 +61,9 @@ ActiveRecord::Schema.define(version: 20140408032209) do
   end
 
   create_table "participants", force: true do |t|
-    t.string   "first_name",           default: "", null: false
-    t.string   "last_name",            default: "", null: false
-    t.string   "city",                 default: "", null: false
-    t.integer  "age"
-    t.string   "phone_number",         default: "", null: false
-    t.string   "email",                default: "", null: false
-    t.string   "master_class",         default: "", null: false
-    t.string   "will_perform",         default: "", null: false
-    t.string   "visit_special_guests", default: "", null: false
-    t.string   "payment_method",       default: "", null: false
-    t.string   "will_volunteer"
+    t.string   "first_name", default: "", null: false
+    t.string   "last_name",  default: "", null: false
+    t.string   "email",      default: "", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
