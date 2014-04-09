@@ -17,60 +17,11 @@
   }
 }
 
-.signup-volunteer {
+.signup-email {
   @extend %signup-fieldset;
-
-  label {
-    float: left;
-    padding: 12px 0 0;
-    margin: 0 0 22px;
-  }
 
   input {
     width: 396px;
-  }
-}
-
-.signup-question {
-  @extend %signup-fieldset;
-  @extend %clearfix;
-
-  label {
-    float: left;
-    padding: 12px 0 0;
-  }
-
-  select {
-    margin: 0 68px 0 0;
-    float: right;
-  }
-}
-
-.signup-checkbox-question {
-  @extend %signup-fieldset;
-
-  input[type="checkbox"] {
-    margin-right: 4px;
-  }
-
-  .signup-checkbox {
-    margin: 4px 0;
-  }
-}
-
-.signup-long-question {
-  @extend %signup-fieldset;
-  @extend %clearfix;
-
-  label {
-    float: left;
-    padding: 12px 0 0;
-    margin: 0 0 22px;
-  }
-
-  select {
-    width: 383px;
-    float: left;
   }
 }
 
