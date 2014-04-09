@@ -33,3 +33,8 @@
 .signup-submit {
   width: 396px;
 }
+
+p.error-presence, p.error-email-format {
+  margin-bottom: 20px;
+  display: none;
+}

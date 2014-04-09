@@ -1,12 +1,15 @@
-form.signup.modal#main_signup_form
+= simple_form_for Participant.new, html: { id: 'main_signup_form', class: 'signup modal' } do |f|
   h3.modal-title Регистрация
   .modal-body
     fieldset.signup-primary
-      input type="text" name="first_name" placeholder="Имя"
-      input type="text" name="last_name" placeholder="Фамилия"
+      = f.input_field :first_name, label: false, placeholder: 'Имя'
+      = f.input_field :last_name, label: false, placeholder: 'Фамилия'
 
     fieldset.signup-email
-      input type="text" name="email" placeholder="Контактный email"
+      = f.input_field :email, label: false, placeholder: 'Контактный email'
+
+    p.error-presence Все поля обязательны к заполнению
+    p.error-email-format Некорректный формат e-mail
 
     fieldset
-      input.btn--submit.signup-submit type="submit" value="Я иду!"
+      = f.button :submit, label: false, value: 'Я иду!', class: 'btn--submit signup-submit'

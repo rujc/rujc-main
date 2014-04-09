@@ -5,6 +5,7 @@
 //= require jquery.countdown-ru
 //= require fancybox
 //= require jquery-placeholder
+//= require signup_validation
 
 $ ->
   $.extend($.fancybox.defaults, {
