@@ -4,6 +4,7 @@ source 'https://rails-assets.org'
 gem 'rails', '4.0.2'
 
 gem 'pg'
+gem 'simple_form'
 
 # Assets
 gem 'slim-rails'
