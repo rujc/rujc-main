@@ -46,6 +46,10 @@
   }
 }
 
+.singup-checkbox-question {
+  @extend %signup-fieldset;
+}
+
 .signup-long-question {
   @extend %signup-fieldset;
   @extend %clearfix;
