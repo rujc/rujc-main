@@ -1,2 +1,16 @@
 module ApplicationHelper
+  def flash_messages
+    messages = ""
+
+    flash.each do |type, content|
+      if %i(notice error).include? type
+        messages << content_tag(:div, content, id: type, class: 'alert')
+      end
+    end
+
+    raw content_tag :div,
+      raw(messages),
+      id: "flash_messages",
+      class: messages.blank? ? "hidden" : ""
+  end
 end

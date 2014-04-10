@@ -1,7 +1,11 @@
 class ParticipantsController < ApplicationController
   def create
     participant = Participant.new(participant_params)
-    redirect_to :back if participant.save
+    if participant.save
+      redirect_to :back, notice: 'Регистрация прошла успешно, на ваш e-mail было выслано письмо с дальнейшими инструкциями.'
+    else
+      redirect_to :back, error: 'При регистрации произошла ошибка, пожалуйста, повторите попытку.'
+    end
   end
 
   private
