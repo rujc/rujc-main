@@ -2,6 +2,7 @@
   .event_meta
     .event_speaker
       .event_speaker-image
+        img src="http://www.nasa.gov/images/content/711375main_grail20121205_4x3_946-710.jpg"
       .event_speaker-name Дима Захаров
       .event_speaker-title главный докладчик
       .event_speaker-social
@@ -12,12 +13,8 @@
 
   .event_description
     h2.event-title= @event.title
-    a.event-location href="#" г. Москва ул. Пушкина 32
+    a.event-location href="#" = @event.place_title
     .event_description-contents= @event.description
-    .event_participation
-      a.btn href="#" Подробнее
-      a.btn.event-participate_link href="#" Я пойду
-      span.event-participants 163
 
   .event_day_schedule= render 'events/day_schedule', events: @event.the_same_day_in_schedule
 
