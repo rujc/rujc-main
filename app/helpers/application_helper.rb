@@ -4,7 +4,7 @@ module ApplicationHelper
 
     flash.each do |type, content|
       if %i(notice error).include? type
-        messages << content_tag(:div, content, id: type, class: 'alert')
+        messages << content_tag(:div, content, class: 'alert')
       end
     end
 
