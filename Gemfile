@@ -5,6 +5,7 @@ gem 'rails', '4.0.2'
 
 gem 'pg'
 gem 'simple_form'
+gem 'rails-observers'
 
 # Assets
 gem 'slim-rails'

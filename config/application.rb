@@ -21,5 +21,6 @@ module Rjc
     # config.i18n.default_locale = :de
 
     config.assets.initialize_on_precompile = false
+    config.active_record.observers = :participant_registration_observer
   end
 end
