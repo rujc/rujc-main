@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140408032209) do
+ActiveRecord::Schema.define(version: 20140411152205) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,20 +50,33 @@ ActiveRecord::Schema.define(version: 20140408032209) do
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "events", force: true do |t|
-    t.string   "title",       default: "",     null: false
-    t.text     "description", default: "",     null: false
+    t.string   "title",        default: "",     null: false
+    t.text     "description",  default: "",     null: false
     t.datetime "starts_at"
     t.datetime "ends_at"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "conditions",  default: "free", null: false
+    t.string   "conditions",   default: "free", null: false
     t.integer  "place_id"
+    t.integer  "performer_id"
   end
 
   create_table "participants", force: true do |t|
     t.string   "first_name", default: "", null: false
     t.string   "last_name",  default: "", null: false
     t.string   "email",      default: "", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "performers", force: true do |t|
+    t.string   "first_name",     default: "", null: false
+    t.string   "last_name",      default: "", null: false
+    t.string   "title"
+    t.string   "facebook_link"
+    t.string   "instagram_link"
+    t.string   "vk_link"
+    t.string   "twitter_link"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

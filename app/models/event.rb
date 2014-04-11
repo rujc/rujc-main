@@ -1,5 +1,6 @@
 class Event < ActiveRecord::Base
   belongs_to :place
+  belongs_to :performer
 
   scope :ordered, -> { order('events.starts_at asc') }
   scope :since, ->(date) { ordered.where('events.starts_at > ?', date) }
