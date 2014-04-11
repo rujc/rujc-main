@@ -1,4 +1,4 @@
-.beautiful_cover {
+%cover {
   padding-top: 142px;
   min-height: 273px;
   text-align: center;
@@ -8,16 +8,25 @@
   font-style: normal;
   background: image-url('one-more-beautiful-cover-bg.jpg') center center no-repeat;
   background-size: cover;
+
+  .cover-title {
+    color: $beatiful-text-color;
+    font-size: 86px;
+    line-height: 96px;
+    font-weight: bold;
+  }
+
+  .cover-subtitle {
+    font-size: 16px;
+    font-weight: bold;
+  }
 }
 
-.beautiful_cover-title {
-  color: $beatiful-text-color;
-  font-size: 86px;
-  line-height: 96px;
-  font-weight: bold;
+.beautiful_cover {
+  @extend %cover;
 }
 
-.beautiful_cover-subtitle {
-  font-size: 16px;
-  font-weight: bold;
+.convention_cover {
+  @extend %cover;
+  background: image-url('convention.jpg') center center no-repeat;
 }
