@@ -2,6 +2,9 @@ class Event < ActiveRecord::Base
   belongs_to :place
   belongs_to :performer
 
+  just_define_datetime_picker :starts_at
+  just_define_datetime_picker :ends_at
+
   scope :ordered, -> { order('events.starts_at asc') }
   scope :since, ->(date) { ordered.where('events.starts_at > ?', date) }
   scope :until, ->(date) { ordered.where('events.starts_at < ?', date) }

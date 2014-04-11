@@ -109,6 +109,9 @@ GEM
     jquery-ui-rails (4.2.0)
       railties (>= 3.2.16)
     json (1.8.1)
+    just-datetime-picker (0.0.6)
+      activeadmin (>= 0.4.4)
+      formtastic (>= 2.0.0)
     kaminari (0.15.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -256,6 +259,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   fancybox2-rails (~> 0.2.8)
   jquery-rails
+  just-datetime-picker
   letter_opener
   mail_safe
   mini_magick
