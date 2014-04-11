@@ -77,4 +77,10 @@ Rjc::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = {:host => 'staging.rjc2014.ru'}
+  ActionMailer::Base.smtp_settings = {
+    openssl_verify_mode: 'none' # Only use this option for a self-signed and/or wildcard certificate
+  }
 end
