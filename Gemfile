@@ -29,6 +29,10 @@ gem 'capistrano-rbenv', '~> 2.0'
 gem 'capistrano-bundler', '~> 1.1.2'
 gem 'capistrano-rails', '~> 1.1'
 
+group :development do
+  gem "letter_opener"
+end
+
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
