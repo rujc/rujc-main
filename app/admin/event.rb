@@ -52,8 +52,8 @@ ActiveAdmin.register Event do
       f.input :place
       f.input :performer
       f.input :conditions
-      f.input :starts_at, :as => :just_datetime_picker
-      f.input :ends_at, :as => :just_datetime_picker
+      f.input :starts_at, as: :just_datetime_picker
+      f.input :ends_at, as: :just_datetime_picker
     end
 
     f.inputs 'Content', :description
