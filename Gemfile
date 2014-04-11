@@ -38,6 +38,10 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
+group :staging do
+  gem 'mail_safe'
+end
+
 group :staging, :production do
   gem 'unicorn'
 end
