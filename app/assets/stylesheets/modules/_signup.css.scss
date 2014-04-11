@@ -17,26 +17,11 @@
   }
 }
 
-.signup-address {
+.signup-email {
   @extend %signup-fieldset;
 
   input {
     width: 396px;
-  }
-}
-
-.signup-role {
-  @extend %signup-fieldset;
-  @extend %clearfix;
-
-  label {
-    float: left;
-    padding: 12px 0 0 13px;
-  }
-
-  select {
-    width: 356px;
-    float: right;
   }
 }
 
@@ -47,4 +32,9 @@
 
 .signup-submit {
   width: 396px;
+}
+
+p.error-presence, p.error-email-format {
+  margin-bottom: 20px;
+  display: none;
 }

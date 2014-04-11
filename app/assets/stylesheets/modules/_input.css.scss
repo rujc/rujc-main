@@ -13,7 +13,19 @@ input.placeholder {
   @include placeholder;
 }
 
-input {
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9; // IE8-9
+  line-height: normal;
+}
+
+.form-control,
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="email"],
+input[type="url"] {
   -moz-appearance: none;
   -webkit-appearance: none;
   margin: 0;
@@ -30,7 +42,7 @@ input {
 }
 
 select {
-  @extend input;
+  @extend .form-control;
   text-transform: uppercase;
 }
 

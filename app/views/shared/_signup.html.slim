@@ -1,19 +1,15 @@
-form.signup.modal#main_signup_form
-  h3.modal-title Регистрация
+= simple_form_for Participant.new, html: { id: 'main_signup_form', class: 'signup modal' } do |f|
+  h3.modal-title = I18n.t('app.signup.form.header')
   .modal-body
     fieldset.signup-primary
-      input type="text" name="first_name" placeholder="Имя"
-      input type="text" name="last_name" placeholder="Фамилия"
+      = f.input_field :first_name, label: false, placeholder: I18n.t('app.signup.form.placeholders.first_name')
+      = f.input_field :last_name, label: false, placeholder: I18n.t('app.signup.form.placeholders.last_name')
 
-    fieldset.signup-address
-      input type="text" name="address" placeholder="Откуда"
+    fieldset.signup-email
+      = f.input_field :email, label: false, placeholder: I18n.t('app.signup.form.placeholders.email')
 
-    fieldset.signup-role
-      label Я
-      select name="role"
-        option value="spectator" Зритель
-        option value="participant" Участник
+    p.error-presence = I18n.t('app.signup.form.errors.presence')
+    p.error-email-format = I18n.t('app.signup.form.errors.email_format')
 
     fieldset
-      input.btn--submit.signup-submit type="submit" value="Я иду!"
-
+      = f.button :submit, label: false, value: I18n.t('app.signup.form.submit'), class: 'btn--submit signup-submit'

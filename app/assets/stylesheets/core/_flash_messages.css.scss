@@ -1,0 +1,12 @@
+#flash_messages {
+  @extend %clearfix;
+  position: relative;
+  min-height: 15px;
+  padding: 8px 0 10px 20px;
+  background: $bright;
+  color: #fff;
+
+  &.hidden {
+    display: none;
+  }
+}

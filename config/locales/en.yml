@@ -1,3 +1,20 @@
 en:
-  sign_out: "Sign out"
   title: "RJC 2014"
+  activerecord:
+    errors:
+      messages:
+        taken: "user with this email is already registered"
+  app:
+    signup:
+      success: "You have successfully registered. Check your email for the next steps"
+      failure: "There was an error during the signup process — %{error}, please try again."
+      form:
+        header: "Signup"
+        placeholders:
+          first_name: "Name"
+          last_name: "Last name"
+          email: "Contact email address"
+        submit: "I'm in!"
+        errors:
+          presence: "All fields are required"
+          email_format: "Invalid email address format"

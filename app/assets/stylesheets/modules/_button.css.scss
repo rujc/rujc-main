@@ -8,6 +8,8 @@
   font: normal bold 12px/1 $sans-font;
   text-transform: uppercase;
   letter-spacing: 1px;
+  border: none;
+  outline: none;
 
   &, &:link, &:visited {
     color: $btn-color;
@@ -26,6 +28,9 @@
   @extend %btn;
   padding: 10px 13px 10px;
   background: $dark;
+  box-sizing: content-box;
+  line-height: 16px;
+  min-height: 16px;
 
   &:hover {
     color: $bright;
