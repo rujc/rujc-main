@@ -1,2 +1,6 @@
 ru:
   title: "РЖС 2014"
+  activerecord:
+    errors:
+      messages:
+        taken: пользователь с таким e-mail адресом уже зарегистрирован в системе
