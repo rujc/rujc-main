@@ -6,6 +6,8 @@ gem 'rails', '4.0.2'
 gem 'pg'
 gem 'simple_form'
 gem 'rails-observers'
+gem "mini_magick"
+gem 'carrierwave'
 
 # Assets
 gem 'slim-rails'
