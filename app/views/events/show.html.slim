@@ -9,7 +9,7 @@
         .event_performer-social
           a.event_performer-social_link.event_performer-social_fb href="#{@performer.facebook_link}" target="_blank"
             | Facebook
-      - elsif @place
+      - else
         .event_place-image
           img src="#{@place.main_image.url}"
         .event_place-name = @place.title
@@ -18,7 +18,7 @@
 
   .event_description
     h2.event-title= @event.title
-    a.event-location href="#" = @place.title
+    a.event-location href="#{@place.google_maps_link}" target="_blank" = @place.title
     .event_description-contents= @event.description
 
   .event_day_schedule= render 'events/day_schedule', events: @event.the_same_day_in_schedule
