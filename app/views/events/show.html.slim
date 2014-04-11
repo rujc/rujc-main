@@ -3,7 +3,7 @@
     .event_performer
       - if @performer
         .event_performer-image
-          img src="http://www.nasa.gov/images/content/711375main_grail20121205_4x3_946-710.jpg"
+          img src="#{@performer.main_image.url}"
         .event_performer-name = @performer.full_name
         .event_performer-title = @performer.title
         .event_performer-social
@@ -11,7 +11,7 @@
             | Facebook
       - elsif @place
         .event_place-image
-          img src="http://www.nasa.gov/images/content/711375main_grail20121205_4x3_946-710.jpg"
+          img src="#{@place.main_image.url}"
         .event_place-name = @place.title
 
     .event_date= render 'events/event_date', date: @event.starts_at
