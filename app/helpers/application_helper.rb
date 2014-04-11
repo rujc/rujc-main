@@ -1,6 +1,6 @@
 module ApplicationHelper
   def flash_messages
-    messages = ""
+    messages = ''
 
     flash.each do |type, content|
       if %i(notice alert).include? type
@@ -10,7 +10,7 @@ module ApplicationHelper
 
     raw content_tag :div,
       raw(messages),
-      id: "flash_messages",
-      class: messages.blank? ? "hidden" : ""
+      id: 'flash_messages',
+      class: messages.blank? ? 'hidden' : ''
   end
 end

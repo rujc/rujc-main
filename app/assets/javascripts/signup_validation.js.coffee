@@ -20,5 +20,4 @@ $ ->
       form_is_valid = false
       $('.error-presence').show()
 
-
     form_is_valid
