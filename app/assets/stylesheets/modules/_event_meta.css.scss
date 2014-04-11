@@ -6,7 +6,7 @@
   border-right: 2px solid $dark;
 }
 
-.event_speaker-image {
+.event_performer-image, .event_place-image {
   width: 146px;
   height: 146px;
   overflow: hidden;
@@ -15,18 +15,18 @@
   background: #d3d3d3;
 }
 
-.event_speaker-name {
+.event_performer-name, .event_place-name {
   font: normal bold 15px/1.2 $sans-font;
   text-transform: uppercase;
   color: $bright;
 }
 
-.event_speaker-title {
+.event_performer-title {
   font-size: 11px;
   margin: 0 0 5px;
 }
 
-.event_speaker-social {
+.event_performer-social {
   position: relative;
   padding-top: 10px;
 
@@ -41,7 +41,7 @@
   }
 }
 
-.event_speaker-social_link {
+.event_performer-social_link {
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -53,7 +53,7 @@
 
   &:hover { background-position: 0 -14px }
 
-  &.event_speaker-social_vk {
+  &.event_performer-social_vk {
     background-position: -14px 0;
 
     &:hover { background-position: -14px -14px }
