@@ -1,19 +1,24 @@
 .event
   .event_meta
     .event_speaker
-      .event_speaker-image
-        img src="http://www.nasa.gov/images/content/711375main_grail20121205_4x3_946-710.jpg"
-      .event_speaker-name Дима Захаров
-      .event_speaker-title главный докладчик
-      .event_speaker-social
-        a.event_speaker-social_link.event_speaker-social_fb href="#" Facebook
-        a.event_speaker-social_link.event_speaker-social_vk href="#" Vkontakte
+      - if @performer
+        .event_speaker-image
+          img src="http://www.nasa.gov/images/content/711375main_grail20121205_4x3_946-710.jpg"
+        .event_speaker-name = @performer.full_name
+        .event_speaker-title = @performer.title
+        .event_speaker-social
+          a.event_speaker-social_link.event_speaker-social_fb href="#{@performer.facebook_link}" target="_blank"
+            | Facebook
+      - elsif @place
+        .event_speaker-image
+          img src="http://www.nasa.gov/images/content/711375main_grail20121205_4x3_946-710.jpg"
+        .event_speaker-name = @place.title
 
     .event_date= render 'events/event_date', date: @event.starts_at
 
   .event_description
     h2.event-title= @event.title
-    a.event-location href="#" = @event.place_title
+    a.event-location href="#" = @place.title
     .event_description-contents= @event.description
 
   .event_day_schedule= render 'events/day_schedule', events: @event.the_same_day_in_schedule

@@ -1,11 +1,10 @@
 class Event < ActiveRecord::Base
   belongs_to :place
+  belongs_to :performer
 
   scope :ordered, -> { order('events.starts_at asc') }
   scope :since, ->(date) { ordered.where('events.starts_at > ?', date) }
   scope :until, ->(date) { ordered.where('events.starts_at < ?', date) }
-
-  delegate :title, to: :place, allow_nil: true, prefix: true
 
   def next_day_in_schedule
     self.class.since(starts_at.end_of_day).first
