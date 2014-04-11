@@ -30,6 +30,7 @@ gem 'capistrano-bundler', '~> 1.1.2'
 gem 'capistrano-rails', '~> 1.1'
 
 group :development, :test do
+  gem 'pry'
   gem 'rspec-rails'
 end
 
