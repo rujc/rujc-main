@@ -37,6 +37,15 @@
     top: 0;
     background: $bright;
   }
+
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+
+  ul, ol {
+    margin-left: 2em;
+    margin-bottom: 1em;
+  }
 }
 
 .event_participation {
