@@ -43,6 +43,11 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+end
+
 group :staging do
   gem 'mail_safe'
 end
