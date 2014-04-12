@@ -56,7 +56,9 @@ ActiveAdmin.register Event do
       f.input :ends_at, as: :just_datetime_picker
     end
 
-    f.inputs 'Content', :description
+    f.inputs 'Content' do
+      f.input :description, as: :html_editor
+    end
 
     f.actions
   end
