@@ -10,4 +10,5 @@ Rjc::Application.routes.draw do
   get '/about',    to: 'static#about'
   get '/creators', to: 'static#creators'
   get '/contacts', to: 'static#contacts'
+  get '/team',     to: 'static#team'
 end

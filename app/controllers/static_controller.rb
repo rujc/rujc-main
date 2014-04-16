@@ -11,4 +11,7 @@ class StaticController < ApplicationController
 
   def contacts
   end
+
+  def team
+  end
 end
