@@ -103,6 +103,11 @@ GEM
     ejs (1.1.1)
     erubis (2.7.0)
     execjs (2.0.2)
+    factory_girl (4.4.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.4.1)
+      factory_girl (~> 4.4.0)
+      railties (>= 3.0.0)
     fancybox2-rails (0.2.8)
       railties (>= 3.1.0, < 5.0)
     formtastic (2.3.0.rc2)
@@ -277,6 +282,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 4.0.0)
   database_cleaner
+  factory_girl_rails
   fancybox2-rails (~> 0.2.8)
   jquery-rails
   just-datetime-picker
