@@ -1,6 +1,8 @@
 RJC 2014 website
 -
 
+[![Build Status](https://travis-ci.org/juggler/rjc.png?branch=master)](https://travis-ci.org/juggler/rjc)
+
 This is a repository for RJC 2014 website.
 
 Dependencies

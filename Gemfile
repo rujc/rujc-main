@@ -43,6 +43,12 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+end
+
 group :staging do
   gem 'mail_safe'
 end
