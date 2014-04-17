@@ -2,18 +2,18 @@
   .event_meta
     - if @performer
       .event_performer
-          .event_performer-image
-            img src="#{@performer.main_image.url}"
-          .event_performer-name = @performer.full_name
-          .event_performer-title = @performer.title
-          .event_performer-social
-            a.event_performer-social_link.event_performer-social_fb href="#{@performer.facebook_link}" target="_blank"
-              | Facebook
+        .event_performer-image
+          img src="#{@performer.main_image.url}"
+        .event_performer-name = @performer.full_name
+        .event_performer-title = @performer.title
+        .event_performer-social
+          a.event_performer-social_link.event_performer-social_fb href="#{@performer.facebook_link}" target="_blank"
+            | Facebook
     - else
       .event_place
-          .event_place-image
-            img src="#{@place.main_image.url}"
-          .event_place-name = @place.title
+        .event_place-image
+          img src="#{@place.main_image.url}"
+        .event_place-name = @place.title
 
     .event_date= render 'events/event_date', date: @event.starts_at
 
