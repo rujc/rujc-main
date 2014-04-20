@@ -23,7 +23,7 @@ namespace :deploy do
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-      execute :service, 'unicorn_rjc_staging restart'
+      execute :service, "unicorn_rjc_#{fetch(:rails_env)} restart"
     end
   end
 
