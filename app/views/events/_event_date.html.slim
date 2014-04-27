@@ -1,7 +1,9 @@
 .event_date-text Начало в
-.event_date-time= date.strftime('%k:%M')
+.event_date-time= starts_at.strftime('%k:%M')
 .event_date-wrap
-  .event_date-date= date.strftime('%e')
+  .event_date-date= starts_at.strftime('%e')
   .event_date-month
-    i= date.strftime('%B')
+    i= starts_at.strftime('%B')
     em
+.event_date-text До
+.event_date-time= ends_at.strftime('%k:%M')
