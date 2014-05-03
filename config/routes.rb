@@ -6,6 +6,7 @@ Rjc::Application.routes.draw do
 
   resources :events, only: [:index, :show]
   resources :participants, only: [:create]
+  resources :registrations, only: [:new]
 
   get '/about',    to: 'static#about'
   get '/creators', to: 'static#creators'
