@@ -20,8 +20,6 @@ html lang="en"
 
     = yield
 
-    = render 'shared/signup'
-
     = javascript_include_tag :application
     - if Rails.env.staging? or Rails.env.production?
       = render 'shared/google_analytics'
