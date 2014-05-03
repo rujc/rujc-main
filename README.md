@@ -3,7 +3,7 @@ RJC 2014 website
 
 [![Build Status](https://travis-ci.org/juggler/rjc.png?branch=master)](https://travis-ci.org/juggler/rjc)
 
-This is a repository for RJC 2014 website.
+This is a repository for [RJC 2014 website](http://rjc2014.ru).
 
 Dependencies
 -
@@ -11,6 +11,7 @@ Dependencies
 - Ruby 2.1.1
   - `rbenv install 2.1.1`
 - Rails 4.0.2
+- PostgreSQL 9.3.4
 
 Quick Start
 -
@@ -38,6 +39,7 @@ bin/rails s
 What's inside?
 -
 
-- Admin panel on `/admin` (not done yet)
-- 'Static' pages like root page, `/about`, `/creators` and `/contacts`
-- Events `/events` with index and show pages
+- Admin panel on `/admin`
+- 'Static' pages `main`, `/about`, `/creators` and `/contacts`
+- Events `/events/:id` pages
+- Registration page on `/registrations/new`
