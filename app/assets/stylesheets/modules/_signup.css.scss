@@ -38,11 +38,10 @@ p.error-presence, p.error-email-format {
 .signup {
   padding-top: 70px;
   min-height: 220px;
+  min-width: 422px;
+  font: normal bold 12px/1 $sans-font;
   text-align: center;
   text-transform: uppercase;
-  font-family: $sans-font;
-  font-weight: bold;
-  font-style: normal;
   background: $bright;
   background-size: cover;
 }

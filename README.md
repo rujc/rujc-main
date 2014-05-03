@@ -42,4 +42,4 @@ What's inside?
 - Admin panel on `/admin`
 - 'Static' pages `main`, `/about`, `/creators` and `/contacts`
 - Events `/events/:id` pages
-- Registration modal window
+- Registration page on `/registrations/new`
