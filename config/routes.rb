@@ -4,7 +4,11 @@ Rjc::Application.routes.draw do
 
   root to: 'static#main'
 
-  resources :events, only: [:index, :show]
+  resources :events, only: [:index, :show] do
+    member do
+      post :participants
+    end
+  end
   resources :participants, only: [:create]
   resources :registrations, only: [:new]
 

@@ -22,7 +22,7 @@ module ApplicationHelper
   end
 
   def twitter_message(event)
-    [event.title, '|', event_url(event)].join(' ')
+    [event.twitter_message, '|', event_url(event)].join(' ')
   end
 
    def event_participate_link(event)

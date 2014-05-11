@@ -2,7 +2,7 @@ ActiveAdmin.register Event do
   permit_params :title, :description, :starts_at, :ends_at,
     :conditions, :place_id, :performer_id, :starts_at_date,
     :starts_at_time_hour, :starts_at_time_minute, :ends_at_date,
-    :ends_at_time_hour, :ends_at_time_minute
+    :ends_at_time_hour, :ends_at_time_minute, :twitter_message
 
   index do
     column :title do |event|
@@ -20,6 +20,7 @@ ActiveAdmin.register Event do
     column :starts_at
     column :ends_at
     column :conditions
+    column :twitter_message
 
     default_actions
   end
@@ -31,6 +32,7 @@ ActiveAdmin.register Event do
         "#{event.starts_at} - #{event.ends_at}"
       end
       row :conditions
+      row :twitter_message
       row :place
       row :performer
       div do
@@ -52,6 +54,7 @@ ActiveAdmin.register Event do
       f.input :place
       f.input :performer
       f.input :conditions
+      f.input :twitter_message
       f.input :starts_at, as: :just_datetime_picker
       f.input :ends_at, as: :just_datetime_picker
     end

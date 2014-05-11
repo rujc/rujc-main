@@ -2,6 +2,8 @@ class Event < ActiveRecord::Base
   belongs_to :place
   belongs_to :performer
 
+  is_impressionable
+
   just_define_datetime_picker :starts_at
   just_define_datetime_picker :ends_at
 
