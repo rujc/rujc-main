@@ -13,8 +13,10 @@ $ ->
   $('input, textarea').placeholder()
 
   $('.event-participate_link').click ->
+    event_id = $(event.target).data('id')
+
     $.ajax
-      url: '/events/4/participants',
+      url: "/events/#{event_id}/participants",
       type: 'POST',
       beforeSend: (xhr) ->
         xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))

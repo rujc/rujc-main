@@ -29,6 +29,6 @@ module ApplicationHelper
     message = twitter_message(event)
     url = twitter_web_intent_url(message)
 
-    link_to 'Я пойду!', url, class: 'btn event-participate_link', target: '_blank'
+    link_to 'Я пойду!', url, class: 'btn event-participate_link', target: '_blank', :'data-id' => event.id
   end
 end
