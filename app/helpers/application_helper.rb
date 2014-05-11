@@ -13,4 +13,28 @@ module ApplicationHelper
       id: 'flash_messages',
       class: messages.blank? ? 'hidden' : ''
   end
+
+  def twitter_web_intent_url(text)
+    params = {
+      hashtags: 'rjc2014',
+      via: 'rjc_2014',
+      text: ['Я пойду на', text].join(' ')
+    }
+
+    ['https://twitter.com/intent/tweet?', params.to_query].join
+  end
+
+  def twitter_message(event)
+    [event.twitter_message, '|', event_url(event)].join(' ')
+  end
+
+   def event_participate_link(event)
+    message = twitter_message(event)
+    url = twitter_web_intent_url(message)
+
+    link_to 'Я пойду!', url,
+     :class => 'btn event-participate_link',
+     :target => '_blank',
+     :'data-id' => event.id
+  end
 end

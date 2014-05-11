@@ -8,4 +8,12 @@ class EventsController < ApplicationController
     @performer = @event.performer
     @place = @event.place
   end
+
+  def participants
+    @event = Event.find(params[:id])
+
+    impressionist @event, '', :unique => [:impressionable_type, :impressionable_id, :session_hash]
+
+    head :ok
+  end
 end

@@ -8,6 +8,7 @@ gem 'simple_form'
 gem 'rails-observers'
 gem "mini_magick"
 gem 'carrierwave'
+gem 'impressionist'
 
 # Assets
 gem 'slim-rails'
