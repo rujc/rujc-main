@@ -21,6 +21,9 @@
     h2.event-title= @event.title
     a.event-location href="#{@place.google_maps_link}" target="_blank" = @place.title
     .event_description-contents= sanitize @event.description
+    .event_participation
+      = event_participate_link @event
+      span.event-participants 163
 
   .event_day_schedule= render 'events/day_schedule', events: @event.the_same_day_in_schedule
 
