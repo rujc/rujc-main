@@ -15,10 +15,13 @@ module ApplicationHelper
   end
 
   def twitter_web_intent_url(text)
-    [
-      'https://twitter.com/intent/tweet?hashtags=rjc2014&via=rjc_2014&text=Я пойду на ',
-      URI.escape(text)
-    ].join
+    params = {
+      hashtags: 'rjc2014',
+      via: 'rjc_2014',
+      text: ['Я пойду на', text].join(' ')
+    }
+
+    ['https://twitter.com/intent/tweet?', params.to_query].join
   end
 
   def twitter_message(event)
