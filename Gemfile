@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 source 'https://rails-assets.org'
 
-gem 'rails', '4.0.2'
+gem 'rails', '4.1.1'
 
 gem 'pg'
 gem 'simple_form'
