@@ -3,7 +3,7 @@ module ApplicationHelper
     messages = ''
 
     flash.each do |type, content|
-      if %i(notice alert).include? type
+      if %w(notice alert).include? type
         messages << content_tag(:div, content, class: 'alert')
       end
     end
