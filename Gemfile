@@ -26,6 +26,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'just-datetime-picker'
 gem 'active_admin_editor'
+gem 'devise'
 
 # Capistrano
 gem 'capistrano', '~> 3.1.0'
