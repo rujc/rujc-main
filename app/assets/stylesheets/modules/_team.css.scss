@@ -1,12 +1,11 @@
 .team {
   list-style: none outside;
-  padding: 60px 0 0;
+  padding: 25px 0 0;
   margin: 0!important;
 }
 
 .team_member {
   @extend %clearfix;
-  padding: 0 0 86px;
 }
 
 .team_member-image {
@@ -15,7 +14,24 @@
   height: 210px;
   margin: 0 25px 0 0;
   border-radius: 220px;
-  background: #d3d3d3;
+  background: white;
+  overflow: hidden;
+
+  img.wild-planet {
+    height: 109px;
+    padding-top: 52px;
+    width: 210px;
+  }
+
+  img.ogo {
+    padding: 30px 0 0 30px;
+  }
+
+  img.firemag {
+    padding-top: 44px;
+    width: 172px;
+    padding-left: 19px;
+  }
 }
 
 .team_member-info {
