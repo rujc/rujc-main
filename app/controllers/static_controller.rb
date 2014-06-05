@@ -1,6 +1,6 @@
 class StaticController < ApplicationController
   def main
-    render 'main', layout: 'cover'
+    render 'about'
   end
 
   def about
