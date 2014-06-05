@@ -8,7 +8,7 @@ nav.global_nav
       a href="/about" О мероприятии
     li.global_nav-link*{ class: controller.controller_name == 'events' ? 'is-active' : '' }
       = link_to 'Программа', Event.ordered.first
-    li.global_nav-link*{ class: current_page?(contacts_path) ? 'is-active' : '' }
-      a href="/contacts" Контакты
+    li.global_nav-link*{ class: current_page?(team_path) ? 'is-active' : '' }
+      a href="/team" Организаторы
     li.global_nav-link.global_nav-register_link
       = link_to 'Регистрация', new_registration_path

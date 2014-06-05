@@ -2,8 +2,54 @@
   font-size: 18px;
 
   p { margin: 0 0 1em }
+
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+
+  ul, ol {
+    margin-left: 50px;
+    margin-bottom: 1em;
+  }
 }
 
 .event_description-contents {
   p { margin: 0 0 1em }
+}
+
+.quiet-title {
+  position: relative;
+  padding: 0 0 17px;
+  margin: 17px 0;
+  font: normal bold 36px/1 $sans-font;
+  color: $bright;
+  text-transform: uppercase;
+  text-align: center;
+
+
+  &:after {
+    @extend %absolute-pseudo;
+    bottom: 0;
+    left: 50%;
+    width: 22px;
+    height: 3px;
+    margin-left: -11px;
+    background: $dark;
+  }
+
+  small {
+    display: block;
+    margin: 6px 0 0;
+    text-transform: none;
+    font: italic normal 13px/12px $serif-font;
+    color: $text-color;
+
+    &:before {
+      content: '- ';
+    }
+
+    &:after {
+      content: ' -';
+    }
+  }
 }
