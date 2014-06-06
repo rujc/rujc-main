@@ -8,7 +8,6 @@ Rjc::Application.routes.draw do
     post :participants, on: :member
   end
   resources :participants, only: [:create]
-  resources :registrations, only: [:new]
 
   get '/creators', to: 'static#creators'
   get '/contacts', to: 'static#contacts'
