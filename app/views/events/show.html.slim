@@ -7,7 +7,7 @@
         .event_performer-name = @performer.full_name
         .event_performer-title = @performer.title
         .event_performer-social
-          a.event_performer-social_link.event_performer-social_fb href="#{@performer.facebook_link}" target="_blank"
+          a.social_link--fb href="#{@performer.facebook_link}" target="_blank"
             | Facebook
     - else
       .event_place
@@ -21,10 +21,6 @@
     h2.event-title= @event.title
     a.event-location href="#{@place.google_maps_link}" target="_blank" = @place.title
     .event_description-contents= sanitize @event.description
-    - if @event.twitter_message.present?
-      .event_participation
-        = event_participate_link @event
-        span.event-participants = @event.impressionist_count
 
   .event_day_schedule= render 'events/day_schedule', events: @event.the_same_day_in_schedule
 

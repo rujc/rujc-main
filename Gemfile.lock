@@ -109,8 +109,12 @@ GEM
     factory_girl_rails (4.4.1)
       factory_girl (~> 4.4.0)
       railties (>= 3.0.0)
+    fancybox2-rails (0.2.8)
+      railties (>= 3.1.0, < 5.0)
     formtastic (2.3.0.rc3)
       actionpack (>= 3.0)
+    fotoramajs (4.5.0)
+      sprockets (>= 2)
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
@@ -292,6 +296,8 @@ DEPENDENCIES
   database_cleaner
   devise
   factory_girl_rails
+  fancybox2-rails (~> 0.2.8)
+  fotoramajs
   impressionist
   jquery-rails
   just-datetime-picker
