@@ -3,11 +3,14 @@
   text-align: center;
   height: 100%;
   box-sizing: border-box;
-  padding-top: 400px;
+  padding-top: 450px;
   line-height: normal;
 
   a {
-    color: white;
+    background-color: white;
+    opacity: 0.8;
+    filter: alpha(Opacity=80);
+    padding: 11px;
   }
 }
 
