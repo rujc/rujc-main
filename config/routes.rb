@@ -10,7 +10,6 @@ Rjc::Application.routes.draw do
   resources :participants, only: [:create]
   resources :registrations, only: [:new]
 
-  get '/about',    to: 'static#about'
   get '/creators', to: 'static#creators'
   get '/contacts', to: 'static#contacts'
   get '/team',     to: 'static#team'
