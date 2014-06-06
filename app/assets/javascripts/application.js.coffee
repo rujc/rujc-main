@@ -6,6 +6,7 @@
 //= require fancybox
 //= require jquery-placeholder
 //= require signup_validation
+//= require fotorama
 
 $ ->
   $.extend($.fancybox.defaults, {

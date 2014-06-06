@@ -21,6 +21,7 @@ gem 'autoprefixer-rails'
 gem 'rails-sass-images'
 gem 'fancybox2-rails', '~> 0.2.8'
 gem 'rails-assets-jquery-placeholder'
+gem 'fotoramajs'
 
 gem 'therubyracer', platforms: :ruby
 
