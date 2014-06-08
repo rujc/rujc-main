@@ -1,3 +1,7 @@
+.signup {
+  display: none;
+}
+
 %signup-fieldset {
   margin: 0 0 22px;
 }
@@ -13,7 +17,7 @@
   }
 }
 
-.signup-email {
+.signup-email, .signup-phone {
   @extend %signup-fieldset;
 
   input {
@@ -33,15 +37,4 @@
 p.error-presence, p.error-email-format {
   margin-bottom: 20px;
   display: none;
-}
-
-.signup {
-  padding-top: 70px;
-  min-height: 220px;
-  min-width: 422px;
-  font: normal bold 12px/1 $sans-font;
-  text-align: center;
-  text-transform: uppercase;
-  background: $bright;
-  background-size: cover;
 }

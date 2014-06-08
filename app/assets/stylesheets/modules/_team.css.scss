@@ -1,0 +1,49 @@
+.team {
+  list-style: none outside;
+  padding: 25px 0 0;
+  margin: 0!important;
+}
+
+.team_member {
+  @extend %clearfix;
+}
+
+.team_member-image {
+  float: left;
+  width: 210px;
+  height: 210px;
+  margin: 0 25px 0 0;
+  background: white;
+  overflow: hidden;
+
+  img.wild-planet {
+    height: 109px;
+    padding-top: 52px;
+    width: 210px;
+  }
+
+  img.ogo {
+    padding: 30px 0 0 30px;
+  }
+
+  img.firemag {
+    padding-top: 44px;
+    width: 172px;
+    padding-left: 19px;
+  }
+}
+
+.team_member-info {
+  margin: 12px 0 0 240px;
+  font-size: 14px;
+}
+
+.team_member-name {
+  font: normal bold 30px/42px $sans-font;
+  text-transform: uppercase;
+  color: $bright;
+}
+
+.team_member-social {
+  margin: 8px 0;
+}

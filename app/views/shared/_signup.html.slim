@@ -1,0 +1,18 @@
+= simple_form_for Participant.new, html: { id: 'main_signup_form', class: 'signup modal' } do |f|
+  h3.modal-title = I18n.t('app.signup.form.header')
+  .modal-body
+    fieldset.signup-primary
+      = f.input_field :first_name, label: false, placeholder: I18n.t('app.signup.form.placeholders.first_name')
+      = f.input_field :last_name, label: false, placeholder: I18n.t('app.signup.form.placeholders.last_name')
+
+    fieldset.signup-phone
+      = f.input_field :phone_number, label: false, placeholder: I18n.t('app.signup.form.placeholders.phone_number')
+
+    fieldset.signup-email
+      = f.input_field :email, label: false, placeholder: I18n.t('app.signup.form.placeholders.email')
+
+    p.error-presence = I18n.t('app.signup.form.errors.presence')
+    p.error-email-format = I18n.t('app.signup.form.errors.email_format')
+
+    fieldset
+      = f.button :submit, label: false, value: I18n.t('app.signup.form.submit'), class: 'btn--submit signup-submit'

@@ -1,0 +1,23 @@
+.social_link {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 8px 0 0;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: inline('social-btns.png') no-repeat;
+  background-size: 28px 28px;
+
+  &:hover { background-position: 0 -14px }
+}
+
+.social_link--fb {
+  @extend .social_link;
+}
+
+.social_link--vk {
+  @extend .social_link;
+  background-position: -14px 0;
+
+  &:hover { background-position: -14px -14px }
+}

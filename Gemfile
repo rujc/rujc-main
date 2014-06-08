@@ -1,13 +1,14 @@
 source 'https://rubygems.org'
 source 'https://rails-assets.org'
 
-gem 'rails', '4.0.2'
+gem 'rails', '4.1.1'
 
 gem 'pg'
 gem 'simple_form'
 gem 'rails-observers'
 gem "mini_magick"
 gem 'carrierwave'
+gem 'impressionist'
 
 # Assets
 gem 'slim-rails'
@@ -18,7 +19,9 @@ gem 'jquery-rails'
 gem 'normalize-rails'
 gem 'autoprefixer-rails'
 gem 'rails-sass-images'
+gem 'fancybox2-rails', '~> 0.2.8'
 gem 'rails-assets-jquery-placeholder'
+gem 'fotoramajs'
 
 gem 'therubyracer', platforms: :ruby
 
@@ -26,6 +29,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'just-datetime-picker'
 gem 'active_admin_editor'
+gem 'devise'
 
 # Capistrano
 gem 'capistrano', '~> 3.1.0'

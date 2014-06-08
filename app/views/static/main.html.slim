@@ -1,13 +1,33 @@
-.welcome-container
-  .welcome
-    h1.welcome-logo RJC
-    h2.welcome-brand Российская Жонглёрская Конвенция
-    div.welcome-description
-      | Первая российская жонглёрская конвенция, самое масштабное тематическое событие года
-        европейского&nbsp;уровня.
-    a.welcome-learn_more href="/about"
-      i
+.fotorama data-width="100%" data-height="600px" data-ratio="1024/200"
+  .caption data-img="#{image_url 'main/1.jpg'}"
+    a.modal-link href="#main_signup_form"
+      | Регистрация на RJC 2015 уже сейчас!
 
-  .welcome-countdown
-    | До начала RJC осталось
-    .welcome-countdown_timer
+  .caption data-img="#{image_url 'main/2.jpg'}"
+    a.modal-link href="#main_signup_form"
+      | Хочешь поехать в Петербург?
+
+  .caption data-img="#{image_url 'main/3.jpg'}"
+    a.modal-link href="#main_signup_form"
+      | Зарегистрируйся на RJC 2015!
+
+.regular-content
+  h1 RJC 2015
+
+  p
+    | Мы не планируем останавливаться на достигнутом и уже готовимся к РЖК 2015, которая
+      пройдет в Санкт-Петербурге.
+
+  p
+    | Хочешь поехать в Петербург на РЖК 2015? #{ link_to 'Зарегистрируйся уже сейчас!', '#main_signup_form', class: 'modal-link' }
+
+
+  h1 RJC 2014
+  p
+    | В мае 2014 года в Москве состоялась Первая Российская Жонглерская Конвенция.
+      РЖК собралa несколько сотен жонглеров со всей России. В столицу съехались
+      жонглеры из Санкт-Петербурга, Казани, Нижнего Новгорода, Саратова и других городов.
+
+  p
+    | Отчеты о мероприятии можно посмотреть в нашей #{ link_to 'группе Вконтакте', 'https://vk.com/rjc2015', target: '_blank'}.
+      Вскоре, мы отберем лучшие фотографии и обзоры и выложим их на нашем сайте!
