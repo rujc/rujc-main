@@ -9,7 +9,7 @@ $ ->
   $('#main_signup_form').submit ->
     form_is_valid = true
 
-    if isPresent('first_name') and isPresent('last_name') and isPresent('email')
+    if isPresent('first_name') and isPresent('last_name') and isPresent('email') and isPresent('phone_number')
       $('.error-presence').hide()
       if emailIsCorrect()
         $('.error-email-format').hide()

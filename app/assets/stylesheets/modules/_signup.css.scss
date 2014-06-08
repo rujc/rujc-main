@@ -17,7 +17,7 @@
   }
 }
 
-.signup-email {
+.signup-email, .signup-phone {
   @extend %signup-fieldset;
 
   input {

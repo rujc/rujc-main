@@ -13,6 +13,7 @@ en:
         placeholders:
           first_name: "Name"
           last_name: "Last name"
+          phone: "Contact phone number"
           email: "Contact email address"
         submit: "I'm in!"
         errors:
