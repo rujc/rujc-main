@@ -6,6 +6,9 @@
       = f.input_field :last_name, label: false, placeholder: I18n.t('app.signup.form.placeholders.last_name')
 
     fieldset.signup-email
+      = f.input_field :phone_number, label: false, placeholder: I18n.t('app.signup.form.placeholders.phone_number')
+
+    fieldset.signup-email
       = f.input_field :email, label: false, placeholder: I18n.t('app.signup.form.placeholders.email')
 
     p.error-presence = I18n.t('app.signup.form.errors.presence')

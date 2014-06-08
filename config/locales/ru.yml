@@ -13,6 +13,7 @@ ru:
         placeholders:
           first_name: "Имя"
           last_name: "Фамилия"
+          phone_number: "Контактный телефон"
           email: "Контактный email"
         submit: "Я иду!"
         errors:

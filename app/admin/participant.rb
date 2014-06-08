@@ -4,6 +4,7 @@ ActiveAdmin.register Participant do
   index do
     column :first_name
     column :last_name
+    column :phone_number
     column :email
 
     default_actions
@@ -13,6 +14,7 @@ ActiveAdmin.register Participant do
     attributes_table do
       row :first_name
       row :last_name
+      row :phone_number
       row :email
     end
   end
