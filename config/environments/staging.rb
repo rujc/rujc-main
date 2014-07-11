@@ -79,7 +79,7 @@ Rjc::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = {:host => 'staging.rjc2014.ru'}
+  config.action_mailer.default_url_options = {:host => 'staging.rujc.ru'}
   ActionMailer::Base.smtp_settings = {
     openssl_verify_mode: 'none' # Only use this option for a self-signed and/or wildcard certificate
   }
