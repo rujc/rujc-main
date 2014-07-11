@@ -2,7 +2,7 @@
 lock '3.1.0'
 
 set :application, 'rjc'
-set :repo_url, 'git@github.com:juggler/rjc.git'
+set :repo_url, 'git@github.com:rujc/rujc-main.git'
 
 set :ssh_options, {
   forward_agent: true
