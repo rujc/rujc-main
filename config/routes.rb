@@ -7,4 +7,5 @@ Rjc::Application.routes.draw do
   resources :participants, only: [:create]
 
   get '/team',     to: 'static#team'
+  get '/contacts', to: 'static#contacts'
 end
