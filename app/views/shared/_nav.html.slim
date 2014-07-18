@@ -3,10 +3,17 @@ nav.global_nav
 
   ul.global_nav-links
     li.global_nav-link
-      a href="/" Главная
-    li.global_nav-link*{ class: current_page?(team_path) ? 'is-active' : '' }
-      a href="/team" Организаторы
+      = link_to I18n.t('app.nav.main'), root_path
+    - unless I18n.locale == :en
+        li.global_nav-link*{ class: current_page?(team_path) ? 'is-active' : '' }
+          = link_to I18n.t('app.nav.team'), team_path
     li.global_nav-link*{ class: current_page?(contacts_path) ? 'is-active' : '' }
-      a href="/contacts" Контакты
+      = link_to I18n.t('app.nav.contacts'), contacts_path
+    - if I18n.locale == :en
+        li.global_nav-link
+          a href="/ru" Русский
+    - else
+        li.global_nav-link
+          a href="/en" English
     li.global_nav-link.global_nav-register_link
-      a.modal-link href="#main_signup_form" Регистрация
+      = link_to I18n.t('app.nav.registration'), '#main_signup_form', class: 'modal-link'

@@ -5,15 +5,20 @@ en:
       messages:
         taken: "user with this email is already registered"
   app:
+    nav:
+      main: "Home"
+      team: "Team"
+      contacts: "Contacts"
+      registration: "Registration"
     signup:
-      success: "You have successfully registered. Check your email for the next steps"
+      success: "You have successfully registered. Waiting for you on RJC 2015!"
       failure: "There was an error during the signup process — %{error}, please try again."
       form:
         header: "Signup"
         placeholders:
           first_name: "Name"
           last_name: "Last name"
-          phone: "Contact phone number"
+          phone_number: "Contact phone number"
           email: "Contact email address"
         submit: "I'm in!"
         errors:

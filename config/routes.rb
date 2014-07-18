@@ -8,4 +8,6 @@ Rjc::Application.routes.draw do
 
   get '/team',     to: 'static#team'
   get '/contacts', to: 'static#contacts'
+  get '/en', to: 'locales#en'
+  get '/ru', to: 'locales#ru'
 end
