@@ -5,6 +5,20 @@ en:
       messages:
         taken: "user with this email is already registered"
   app:
+    contacts:
+      headers:
+        main: "Contacts"
+        general_info: "General Enquiries"
+        gala: "Gala Show and Open Stage"
+        volunteering: "Volunteering"
+        workshops: "Workshops"
+        website: "Website"
+      texts:
+        general_info: "If you have a question or query about RJC and it doesn’t fit in any of the groups below, then send it to Ilya - "
+        gala: "Questions about participating in Gala and Open Stage shows go to Alina - "
+        volunteering: "We always need your help! Please send an email to Pasha - "
+        workshops: "If you’d like to give the workshop or want to participate in any, then ask Rita - "
+        website: "Have an issue with our website? Any questions? Contact Max - "
     nav:
       main: "Home"
       team: "Team"

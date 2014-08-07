@@ -1,24 +1,27 @@
 .regular-content
-  h1.quiet-title
-   | Контакты
+  h1.quiet-title = I18n.t('app.contacts.headers.main')
 
-  h1 Общая информация
+  h1 = I18n.t('app.contacts.headers.general_info')
   p
-    | Если у вас есть вопросы по конвенции, и они не попадают ни в одну из категорий,
-      обозначенных ниже, то смело пишите Илье на #{link_to 'info@rujc.ru', 'mailto:info@rujc.ru'}
+    = I18n.t('app.contacts.texts.general_info')
+    | #{link_to('info@rujc.ru', 'mailto:info@rujc.ru')}
 
-  h1 Гала-шоу и открытая сцена
+  h1 = I18n.t('app.contacts.headers.gala')
   p
-    | По вопросам участия в Гала-шоу и выступлений на открытой сцене пишите Алине на #{link_to 'show@rujc.ru', 'mailto:show@rujc.ru'}
+    = I18n.t('app.contacts.texts.gala')
+    | #{link_to('show@rujc.ru', 'mailto:show@rujc.ru')}
 
-  h1 Волонтерство
+  h1 = I18n.t('app.contacts.headers.volunteering')
   p
-    | Нам всегда нужны волонтеры, обращайтесь к Паше - #{link_to 'volunteers@rujc.ru', 'mailto:volunteers@rujc.ru'}
+    = I18n.t('app.contacts.texts.volunteering')
+    | #{link_to('volunteers@rujc.ru', 'mailto:volunteers@rujc.ru')}
 
-  h1 Мастер классы
+  h1 = I18n.t('app.contacts.headers.workshops')
   p
-    | По вопросам проведения или участия в мастер классах пишите Рите на #{link_to 'workshops@rujc.ru', 'mailto:workshops@rujc.ru'}
+    = I18n.t('app.contacts.texts.workshops')
+    | #{link_to('workshops@rujc.ru', 'mailto:workshops@rujc.ru')}
 
-  h1 Вопросы по работе сайта
+  h1 = I18n.t('app.contacts.headers.website')
   p
-    | Если у вы нашли ошибку на сайте или у вас возникли любые другие вопросы по работе сайта, пишите Максу на #{link_to 'webmaster@rujc.ru', 'mailto:webmaster@rujc.ru'}
+    = I18n.t('app.contacts.texts.website')
+    | #{link_to('webmaster@rujc.ru', 'mailto:webmaster@rujc.ru')}
