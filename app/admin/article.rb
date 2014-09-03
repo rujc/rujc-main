@@ -21,7 +21,7 @@ ActiveAdmin.register Article do
   form do |f|
     f.inputs 'Content' do
       f.input :title
-      f.input :body, as: :html_editor
+      f.input :body, as: :html_editor, input_html: { style: 'height: 700px' }
     end
 
     f.actions
