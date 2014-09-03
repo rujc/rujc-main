@@ -5,6 +5,7 @@ Rjc::Application.routes.draw do
   root to: 'static#main'
 
   resources :participants, only: [:create]
+  resources :articles, only: [:index, :show]
 
   get '/team',     to: 'static#team'
   get '/contacts', to: 'static#contacts'

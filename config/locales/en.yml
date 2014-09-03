@@ -13,6 +13,7 @@ en:
     contacts:
       headers:
         main: "Contacts"
+        articles: "Articles"
         general_info: "General Enquiries"
         gala: "Gala Show and Open Stage"
         volunteering: "Volunteering"
@@ -26,6 +27,7 @@ en:
         website: "Have an issue with our website? Any questions? Contact Max - "
     nav:
       main: "Home"
+      articles: "Articles"
       team: "Team"
       contacts: "Contacts"
       registration: "Registration"

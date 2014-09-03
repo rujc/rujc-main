@@ -21,7 +21,7 @@ ActiveAdmin.register Article do
   form do |f|
     f.inputs 'Content' do
       f.input :title
-      f.input :body, as: :text
+      f.input :body, as: :html_editor
     end
 
     f.actions
