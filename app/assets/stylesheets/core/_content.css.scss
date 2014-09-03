@@ -27,6 +27,11 @@
     margin-left: 50px;
     margin-bottom: 1em;
   }
+
+  &.article img {
+    max-width: 900px;
+    margin: 10px;
+  }
 }
 
 .event_description-contents {
