@@ -9,6 +9,7 @@ gem 'rails-observers'
 gem "mini_magick"
 gem 'carrierwave'
 gem 'impressionist'
+gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master'
 
 # Assets
 gem 'slim-rails'

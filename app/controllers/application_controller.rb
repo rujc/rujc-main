@@ -6,11 +6,7 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
 
   def set_locale
-    I18n.locale = if request.path.starts_with? '/admin'
-      :en
-    else
-      params[:locale] || I18n.default_locale
-    end
+    I18n.locale = session[:current_locale] || I18n.default_locale
   end
 
   def after_sign_in_path_for(resource)

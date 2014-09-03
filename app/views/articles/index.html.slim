@@ -1,0 +1,7 @@
+.regular-content
+  h1.quiet-title = I18n.t('app.contacts.headers.articles')
+
+  ul
+    - @articles.each do |article|
+      li
+        = link_to article.title, article
