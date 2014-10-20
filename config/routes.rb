@@ -7,6 +7,7 @@ Rjc::Application.routes.draw do
   resources :participants, only: [:create]
   resources :articles, only: [:index, :show]
 
+  get '/volunteering', to: 'static#volunteering'
   get '/team',     to: 'static#team'
   get '/contacts', to: 'static#contacts'
   get '/en', to: 'locales#en'

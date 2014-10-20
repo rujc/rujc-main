@@ -6,6 +6,8 @@ nav.global_nav
       = link_to I18n.t('app.nav.main'), root_path
     li.global_nav-link
       = link_to I18n.t('app.nav.articles'), articles_path
+    li.global_nav-link
+      = link_to I18n.t('app.nav.volunteering'), volunteering_path
     - unless I18n.locale == :en
         li.global_nav-link*{ class: current_page?(team_path) ? 'is-active' : '' }
           = link_to I18n.t('app.nav.team'), team_path

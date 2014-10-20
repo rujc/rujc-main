@@ -37,6 +37,11 @@ en:
         <p>We prepare many surprises for you.</p>
       why_juggling: "Why «juggling»?"
       whats_special: "What`s special about the convention?"
+    volunteering: >-
+      <p>There is a wonderful slogan in Europe: «Jugglers for the jugglers». We made this convention
+      ourselves. We do what we believe in, and you are welcome to join us. First of all it`s a
+      good way to feel yourself implicated, to become a part of the whole concept. What is more,
+      it`s a new experience, new friends and it`s the shortest way to be in the thick of things!</p>
     contacts:
       headers:
         main: "Contacts"
@@ -55,6 +60,7 @@ en:
     nav:
       main: "Home"
       articles: "Programme"
+      volunteering: "Volunteering"
       team: "Team"
       contacts: "Contacts"
       registration: "Registration"
