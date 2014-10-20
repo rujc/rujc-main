@@ -1,5 +1,5 @@
 ActiveAdmin.register Article do
-  permit_params :title, :body
+  permit_params :title, :body, :title_en, :body_en
 
   index do
     column :title do |article|
@@ -15,6 +15,8 @@ ActiveAdmin.register Article do
     attributes_table do
       row :title
       row :body
+      row :title_en
+      row :body_en
     end
   end
 
@@ -22,6 +24,8 @@ ActiveAdmin.register Article do
     f.inputs 'Content' do
       f.input :title
       f.input :body, as: :html_editor, input_html: { style: 'height: 700px' }
+      f.input :title_en
+      f.input :body_en, as: :html_editor, input_html: { style: 'height: 700px' }
     end
 
     f.actions
