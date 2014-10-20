@@ -5,10 +5,42 @@ en:
       messages:
         taken: "user with this email is already registered"
   app:
+    main_page:
+      registration_splash:
+        message_1: "Sign up for RJC 2015 now!"
+        message_2: "Want to visit St.Petersburg?"
+        message_3: "Sign up for RJC 2015!"
+      why_convention: "Why «convention»?"
+      main_content_1: >-
+        <p>In Europe «juggling convention» is a well-known word collocation and it doesn`t cause
+        misunderstandings. Juggling in Europe has been developed a long time ago and now it`s
+        nothing special. But the situation in Russia is different. In our juggling culture we
+        have a big gap between «professional circus jugglers» and «non-professional jugglers».
+        But fortunately year by year the level of our creative guys increases and juggling
+        hatherings happen more often.</p>
+        <p>The only way we can name it is «convention» which means «gathering». It`s not a festival,
+        it`s not a meating, it`s not a holiday — it includes all those and something more.
+        Choosing the word «convention» we choose the atmosphere of european juggling conventions —
+        the atmosphere of happiness, freedom and creativity.</p>
+      main_content_2: >-
+        <p>Because we breathe and live by this art, we believe in beauty and strength of this genre
+        and we want to give everyone a chance to touch this magic. We want this convention to
+        become a powerful wave for everyone, and we want everyone finding themselves in this wave,
+        from the very beginners who first ever handeled balls to the very professionals. It`s
+        not just our wish — we have already done it and we continue to do it.</p>
+      main_content_3: >-
+        <p>Here every spectator turns into a participant. There are a lot of workshops matching
+        everyone`s taste, many juggling games and an exciting parade! In a flash you are not just
+        a viewer any more — you now make the magic of juggling by yourself! Furthermore, every
+        evening you can have a rest and watch the great masters. Who knows, may be tomorrow
+        you`ll be one of them!</p>
+        <p>We prepare many surprises for you.</p>
+      why_juggling: "Why «juggling»?"
+      whats_special: "What`s special about the convention?"
     contacts:
       headers:
         main: "Contacts"
-        articles: "Articles"
+        articles: "Programme"
         general_info: "General Enquiries"
         gala: "Gala Show and Open Stage"
         volunteering: "Volunteering"
@@ -22,7 +54,7 @@ en:
         website: "Have an issue with our website? Any questions? Contact Max - "
     nav:
       main: "Home"
-      articles: "Articles"
+      articles: "Programme"
       team: "Team"
       contacts: "Contacts"
       registration: "Registration"

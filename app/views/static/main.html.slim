@@ -3,7 +3,7 @@
     a.modal-link href="#main_signup_form" = t("app.main_page.registration_splash.message_1")
 
   .caption data-img="#{image_url 'main/2.jpg'}"
-    a.modal-link href="#main_signup_form" = t("app.main_page.registration_splash.message_3")
+    a.modal-link href="#main_signup_form" = t("app.main_page.registration_splash.message_2")
 
   .caption data-img="#{image_url 'main/3.jpg'}"
     a.modal-link href="#main_signup_form" = t("app.main_page.registration_splash.message_3")
@@ -11,13 +11,13 @@
 .regular-content
   h1 = t("app.main_page.why_convention")
 
-  p = t("app.main_page.main_content_1")
+  = raw t("app.main_page.main_content_1")
 
   = image_tag('main_page_1.jpg', style: 'max-width: 900px')
 
   h1 = t("app.main_page.why_juggling")
 
-  p = t("app.main_page.main_content_2")
+  = raw t("app.main_page.main_content_2")
 
   = image_tag('main_page_2.jpg', style: 'max-width: 900px')
 
