@@ -7,9 +7,9 @@ en:
   app:
     main_page:
       registration_splash:
-        message_1: "Sign up for RJC 2015 now!"
-        message_2: "Want to visit St.Petersburg?"
-        message_3: "Sign up for RJC 2015!"
+        message_1: "RJC 2015 in St.Petersburg!"
+        message_2: "Sign up for RJC 2015!"
+        message_3: "Want to visit St.Petersburg?"
       why_convention: "Why «convention»?"
       main_content_1: >-
         <p>In Europe «juggling convention» is a well-known word collocation and it doesn`t cause
